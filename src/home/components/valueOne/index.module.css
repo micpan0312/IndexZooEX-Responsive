@@ -1,0 +1,44 @@
+.box_container {
+  padding-top: 100px;
+  padding-left: 60px;
+  display: flex;
+  flex-direction: row;
+}
+
+/**/
+
+.left_box {
+  padding-right: 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+.left_box_title {
+  background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(#dcf45d, #2cbd35);
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.left_box_info {
+  margin-top: 20px;
+  color: #d9ffd6;
+}
+
+.enter_but {
+  text-transform: capitalize;
+  color: #212121;
+  background: linear-gradient(#15d264, #dcf45d);
+}
+
+/**/
+
+.right_box {
+  background-image: url("/oneRightBg.svg");
+  /* margin-right: -40px; */
+}
+
+.right_box_img {
+  width: 70vw;
+}

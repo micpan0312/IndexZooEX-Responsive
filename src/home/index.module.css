@@ -1,34 +1,10 @@
 .container_box {
   width: 100%;
-  height: 100vh;
   overflow-y: scroll;
   background-image: url("/mainBg.svg");
-}
-
-.header_container {
-  width: 100%;
-  height: 80px;
-  display: flex;
-  flex-direction: row;
   align-items: center;
-  padding-left: 30px;
-  padding-right: 30px;
-  justify-content: space-between;
-}
-
-.header_container_left {
-  width: 88px;
-  height: 34px;
-}
-
-.header_container_right {
   display: flex;
-  flex-direction: row;
-  color: white;
+  flex-direction: column;
 }
 
-.header_container_right_enter {
-  text-transform: capitalize;
-  color: #212121;
-  background: linear-gradient(#15d264, #dcf45d);
-}
+

@@ -1,0 +1,8 @@
+.container_box {
+  padding-top: 100px;
+  height: 80px;
+  width: 60vw;
+  border: 1px solid white;
+  border-radius: 30px;
+  margin-top: 100px;
+}
