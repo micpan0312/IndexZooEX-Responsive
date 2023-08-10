@@ -3,6 +3,7 @@ import { useState } from "react";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import styles from "./index.module.css";
 
+
 const Header = () => {
   const [open, setOpen] = useState(false);
   return (
@@ -43,7 +44,11 @@ const Header = () => {
           </Menu>
         </div>
 
-        <div>
+        <div
+          style={{
+            paddingLeft: "20px",
+          }}
+        >
           <Button
             style={{
               color: "white",
@@ -53,7 +58,11 @@ const Header = () => {
             {"Zoo Doc"}
           </Button>
         </div>
-        <div>
+        <div
+          style={{
+            paddingLeft: "20px",
+          }}
+        >
           <Button className={styles.header_container_right_enter}>
             Enter the Zoo
           </Button>

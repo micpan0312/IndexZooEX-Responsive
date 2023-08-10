@@ -22,7 +22,7 @@
 }
 
 .left_box_info {
-  margin-top: 20px;
+  margin-top: 20px; 
   color: #d9ffd6;
 }
 
@@ -32,7 +32,7 @@
   background: linear-gradient(#15d264, #dcf45d);
 }
 
-/**/
+/* vw  vh */
 
 .right_box {
   background-image: url("/oneRightBg.svg");
