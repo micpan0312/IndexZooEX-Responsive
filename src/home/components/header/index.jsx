@@ -2,6 +2,7 @@ import { Button, Menu, MenuItem } from "@mui/material";
 import { useState } from "react";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import styles from "./index.module.css";
+import { PhotoSizeSelectActual } from "@mui/icons-material";
 
 
 const Header = () => {
@@ -23,6 +24,8 @@ const Header = () => {
             style={{
               color: "white",
               textTransform: "capitalize",
+              fontSize: "16px",
+              marginTop: "38px",
             }}
           >
             Products
@@ -46,13 +49,16 @@ const Header = () => {
 
         <div
           style={{
-            paddingLeft: "20px",
+            paddingLeft: "32px",
           }}
         >
           <Button
             style={{
               color: "white",
               textTransform: "capitalize",
+              fontSize: "16px",
+              marginTop: "38px",
+
             }}
           >
             {"Zoo Doc"}

@@ -12,9 +12,9 @@ export default function ValueOne() {
         <div className={styles.left_box_info}>
           {`ZooEx is a decentralized margin trading protocol that enables leverage trading for any tokens`}
         </div>
-        <div style={{marginTop:'100px'}}>
+        <div style={{marginTop:'40px'}}>
           <Button className={styles.enter_but}>
-            Enter the Zoo
+            Enter Zoo
           </Button>
         </div>
       </div>

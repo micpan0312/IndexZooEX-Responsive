@@ -11,13 +11,16 @@
   padding-right: 80px;
   display: flex;
   flex-direction: column;
+  height: 370px;
+  width: 540px;
+  margin-left: 48px;
 }
 
 .left_box_title {
   background-clip: text;
   color: transparent;
   background-image: linear-gradient(#dcf45d, #2cbd35);
-  font-size: 40px;
+  font-size: 60px;
   font-weight: bold;
 }
 
@@ -27,9 +30,13 @@
 }
 
 .enter_but {
+  font-weight: bold;
+  width: 139px;
+  height: 48px;
+  font-size: 16px;
   text-transform: capitalize;
   color: #212121;
-  background: linear-gradient(#15d264, #dcf45d);
+  background: radial-gradient(at top right, #15d264, #2cbd35, #dcf45d);
 }
 
 /* vw  vh */
