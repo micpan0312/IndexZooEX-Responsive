@@ -1,8 +1,8 @@
 .container_box {
   height: 126px;
   width: 1119px;
-  border: 1px solid white;
-  border-radius: 30px;
+  border: 1px solid #d9ffd6;
+  border-radius: 20px;
   margin-top: 100px;
   display: flex;
   flex-direction: row;
@@ -11,7 +11,6 @@
 
 .item_box{
   height: 100%;
-  flex: 1;
   display: flex;
   flex-direction: row;
 }
@@ -53,4 +52,12 @@
 .item_right{
   display: flex;
   flex-direction: column;
+}
+
+.sep_bar{
+  display: flex;
+  height: 78px;
+  width: 1px;
+  background-color: #d9ffd6;
+  margin-top: 26px;
 }

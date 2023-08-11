@@ -4,6 +4,8 @@ import Header from "./components/header";
 import ValueOne from "./components/valueOne";
 import ValueTwo from "./components/valueTwo";
 import ValueThree from "./components/ValueThree";
+import JoinZoo from "./components/joinZoo";
+
 
 const Home = () => {
   const [open, setOpen] = useState(false);
@@ -14,6 +16,8 @@ const Home = () => {
       <ValueOne/>
       <ValueTwo/>
       <ValueThree/>
+      <JoinZoo/>
+      
     </div>
   );
 };
