@@ -6,7 +6,7 @@ const ValueTwo = () => {
     return (
       <div className={styles.container_box}>
         <div className={styles.item_box} style={{
-          width: "390.82px",
+          // width: "390.82px",
         }}>
           <div className={styles.item_img}></div>
 
@@ -19,7 +19,7 @@ const ValueTwo = () => {
         <div className={styles.sep_bar}></div>
 
         <div className={styles.item_box} style={{
-          width: "377.64px",
+          // width: "377.64px",
         }}>
           <div className={styles.item_img}></div>
           <div className={styles.item_right}>
@@ -31,7 +31,7 @@ const ValueTwo = () => {
         <div className={styles.sep_bar}></div>
 
         <div className={styles.item_box} style={{
-          width: "370.54px",
+          // width: "370.54px",
         }}>
         <div className={styles.item_img}></div>
           <div className={styles.item_right}>
