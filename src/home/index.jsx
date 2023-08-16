@@ -6,7 +6,7 @@ import ValueTwo from "./components/valueTwo";
 import ValueThree from "./components/ValueThree";
 import JoinZoo from "./components/joinZoo";
 import CarouselBox from "./components/carousel";
-
+import Footer from "./components/footer";
 
 const Home = () => {
   const [open, setOpen] = useState(false);
@@ -19,7 +19,7 @@ const Home = () => {
       <CarouselBox/>
       <ValueThree/>
       <JoinZoo/>
-      
+      <Footer/>
     </div>
   );
 };
