@@ -42,6 +42,9 @@ const CarouselBox = () => {
         <div className={styles.box_right}>
           <div className={styles.box_right_silder_box}>
             <div
+            onClick={()=> {
+              setActiveStep(0)
+            }}
               className={
                 activeStep == 0
                   ? styles.box_right_silder_box_s
@@ -49,6 +52,9 @@ const CarouselBox = () => {
               }
             ></div>
             <div
+                 onClick={()=> {
+                  setActiveStep(1)
+                }}
               className={
                 activeStep == 1
                   ? styles.box_right_silder_box_s
@@ -56,6 +62,9 @@ const CarouselBox = () => {
               }
             ></div>
             <div
+                 onClick={()=> {
+                  setActiveStep(2)
+                }}
               className={
                 activeStep == 2
                   ? styles.box_right_silder_box_s
@@ -65,6 +74,7 @@ const CarouselBox = () => {
           </div>
           <AutoPlaySwipeableViews
             axis={"x"}
+            step={activeStep}
             onChangeIndex={(step) => {
               console.log(step);
               setActiveStep(step);

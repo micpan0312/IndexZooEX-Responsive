@@ -13,13 +13,17 @@ const Home = () => {
 
   return (
     <div className={styles.container_box}>
-      <Header />
-      <ValueOne/>
-      <ValueTwo/>
-      <CarouselBox/>
-      <ValueThree/>
-      <JoinZoo/>
-      <Footer/>
+      <div className={styles.box1}>
+        <img src="/header_left.png" alt="" className={styles.left} />
+        <img src="/header_right.png" alt="" className={styles.right} />
+        <Header />
+        <ValueOne />
+      </div>
+      <ValueTwo />
+      <CarouselBox />
+      <ValueThree />
+      <JoinZoo />
+      <Footer />
     </div>
   );
 };
