@@ -9,7 +9,8 @@ const ValueThree = () => {
       <div className={styles.highlight_col}>
         <div className={styles.highlight_section}>
           <div className={styles.highlight_rows_img}>
-            <img src="/data_bar_1.png"></img>
+            {/* <img src="/data_bar_1.png"></img> */}
+            <img src="/Tail Animation 1.gif"></img>
           </div>
           <div className={styles.highlight_subtitle}>
             Optimized Trade Routing
@@ -25,7 +26,8 @@ const ValueThree = () => {
 
         <div className={styles.highlight_section}>
           <div className={styles.highlight_rows_img}>
-            <img src="/data_bar_2.png"></img>
+            {/* <img src="/data_bar_2.png"></img> */}
+            <img src="/Tail Animation 2.gif"></img>
           </div>
           <div className={styles.highlight_subtitle}>
             Limit Order & Stop Loss Order
@@ -37,7 +39,8 @@ const ValueThree = () => {
 
         <div className={styles.highlight_section}>
           <div className={styles.highlight_rows_img}>
-            <img src="/data_bar_3.png"></img>
+            {/* <img src="/data_bar_3.png"></img> */}
+            <img src="/Tail Animation 3.gif"></img>
           </div>
           <div className={styles.highlight_subtitle}>
             Win Big By Simply Trading
