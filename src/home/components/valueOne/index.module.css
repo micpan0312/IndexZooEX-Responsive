@@ -42,8 +42,9 @@
 /* vw  vh */
 
 .right_box {
-  background-image: url("/oneRightBg.svg");
-  padding: 20px;
+  /* background-image: url("/oneRightBg.svg"); */
+  /* padding: 20px;
+  padding-right: -20px; */
 }
 
 .right_box_img {

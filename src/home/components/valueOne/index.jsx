@@ -20,7 +20,7 @@ export default function ValueOne() {
       </div>
       <div className={styles.right_box}>
         <img
-          src={"/oneRightValue.png"}
+          src={"/oneRightValue1.png"}
           alt=""
           className={styles.right_box_img}
         />
