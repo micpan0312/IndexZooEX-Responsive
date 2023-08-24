@@ -1,8 +1,8 @@
 .box_container{
     width: 100%;
     /* add in height to fix the box */
-    height: 750px;
-    padding: 100px 120px 0 120px;
+    /* height: 750px; */
+    padding: 100px 120px 200px 120px;
 }
 
 .box{
