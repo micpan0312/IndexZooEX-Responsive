@@ -9,7 +9,7 @@ const ValueTwo = () => {
         <div className={styles.item_box} style={{
           flex:'426'
         }}>
-          <div className={styles.item_img}></div>
+          <div className={styles.item_img1}></div>
 
           <div className={styles.item_right}>
             <div className={styles.item_text_title}>Trading Volume</div>
@@ -28,7 +28,7 @@ const ValueTwo = () => {
             }
           }
         >
-          <div className={styles.item_img}></div>
+          <div className={styles.item_img2}></div>
           <div className={styles.item_right}>
             <div className={styles.item_text_title}>Jackpot Number</div>
             <div className={styles.item_value}>$215,819,063</div>
@@ -46,7 +46,7 @@ const ValueTwo = () => {
             }
           }
         >
-          <div className={styles.item_img}></div>
+          <div className={styles.item_img3}></div>
           <div className={styles.item_right}>
             <div className={styles.item_text_title}>Total Users</div>
             <div className={styles.item_value}>249,031</div>
