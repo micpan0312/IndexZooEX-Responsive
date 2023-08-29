@@ -24,6 +24,11 @@ export default function ValueOne() {
           alt=""
           className={styles.right_box_img}
         />
+        <img
+          src={"/needle.gif"}
+          alt=""
+          className={styles.needle}
+        />
       </div>
     </div>
   );
