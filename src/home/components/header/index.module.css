@@ -46,7 +46,6 @@
   background: rgba(220, 255, 232, 0.08);
   box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.20);
   backdrop-filter: blur(45px);
-  color: white;
 }
 
 .dropdownItem {
@@ -55,23 +54,24 @@
   flex-shrink: 0;
   display: flex;
   align-items: center;
+  text-decoration: none; 
+  color:white;
 }
 
-.dropdownItem p{
-  color: white;
-  text-decoration: none;
-}
-
-.dropdownItem:hover {
+.dropdownItem:hover, 
+.dropdownItem p:hover {
   background: rgba(121, 255, 167, 0.04);
   box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.20);
   backdrop-filter: blur(45px);
   border-radius: 10px;
-  /* cursor: pointer; */
+  text-decoration: white; 
+  color: #1CCD58;
+  font-weight: 400;
+  cursor: pointer;
 }
 
 .dropdownItem img {
-  width: 22px;
+  width: 24px;
   margin: 0px 25px 0px 20px;
   opacity: 1;
   transition: var(--speed);

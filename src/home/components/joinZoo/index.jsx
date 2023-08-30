@@ -10,11 +10,12 @@ const JoinZoo = () => {
       <div className={styles.join_info_box}>
         <Button className={styles.join_info} onClick={() => {}}>
           <img
-            src="/twitter.svg"
+            src="/twitter.png"
             style={{
               paddingLeft: "20px",
               paddingTop: "16px",
               paddingBottom: "16px",
+              height: "70px"
             }}
           ></img>
           <div className={styles.join_info_text}>Twitter</div> 
@@ -22,11 +23,12 @@ const JoinZoo = () => {
 
         <Button className={styles.join_info}>
           <img
-            src="/discord.svg"
+            src="/discord.png"
             style={{
               paddingLeft: "20px",
               paddingTop: "16px",
               paddingBottom: "16px",
+              height: "70px"
             }}
           ></img>
           <div className={styles.join_info_text}>Discord</div>
@@ -34,11 +36,12 @@ const JoinZoo = () => {
 
         <Button className={styles.join_info}>
           <img
-            src="/telegram.svg"
+            src="/telegram.png"
             style={{
               paddingLeft: "20px",
               paddingTop: "16px",
               paddingBottom: "16px",
+              height: "70px"
             }}
           ></img>
           <div className={styles.join_info_text}>Telegram</div>
@@ -46,11 +49,12 @@ const JoinZoo = () => {
 
         <Button className={styles.join_info}>
           <img
-            src="/reddit 1.png"
+            src="/reddit.png"
             style={{
               paddingLeft: "20px",
               paddingTop: "16px",
               paddingBottom: "16px",
+              height: "70px"
             }}
           ></img>
           <div className={styles.join_info_text}>Reddit</div>
@@ -61,16 +65,7 @@ const JoinZoo = () => {
         height:"auto",
         justifyContent:"center"
       }}>
-      <img
-        src="/Rectangle.jpg"
-        style={{
-          width: "15%",
-          marginTop: "200px",
-          justtifyContent: "center",
-        //   transform:"rotateY(160deg)"
-        //   marginLeft: "35%",
-        }}
-      ></img>
+        <img src="/bull_w_bkg.jpg" className={styles.bull_w_bkg}></img>  
       </div>
     </div>
   );

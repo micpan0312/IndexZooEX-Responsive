@@ -1,11 +1,12 @@
 .footer_container {
+    top: -200px;
+    position: relative;
     width: 70%;
     height: 435px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
-    margin-bottom: 200px;
+    /* border: 2px solid pink; */
     /* border-bottom: 2px solid pink; */
 }
 

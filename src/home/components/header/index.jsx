@@ -75,7 +75,7 @@ const DropdownItem = (props) => {
     <a className="linkItem" href={props.link} target="blank">
       <div className={styles.dropdownItem} >
         <img src={props.img} alt="" />
-        <p>{props.text}</p>
+        <p className={styles.itemText}>{props.text}</p>
       </div>
     </a>
 

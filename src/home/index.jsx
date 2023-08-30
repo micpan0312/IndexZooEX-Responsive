@@ -21,9 +21,21 @@ const Home = () => {
         <ValueOne />
       </div>
       <ValueTwo />
-      <CarouselBox />
-      <ValueThree />
-      <JoinZoo />
+      <div className={styles.box1}> 
+        <CarouselBox />
+        <img src="/keyfeature.png" alt="" className={styles.keyfeature} />
+      </div>
+      <div className={styles.box1}>
+        <img src="/product_bkg_right.png" alt="" className={styles.product_bkg_right} />
+        <img src="/product_bkg.png" alt="" className={styles.product_bkg} />
+        <ValueThree />
+      </div>
+      <div className={styles.box1}>
+        <JoinZoo />
+        <img src="/joinZoo_right.png" alt="" className={styles.joinZoo_right} />
+        <img src="/joinZoo_left.png" alt="" className={styles.joinZoo_left} />
+      </div>
+      
       <Footer />
     </div>
   );
