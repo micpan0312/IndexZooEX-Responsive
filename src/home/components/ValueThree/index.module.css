@@ -69,3 +69,46 @@
     margin-top: 35px;
 }
 
+
+
+
+
+
+.image_container {
+    
+    /* display: flex; */
+    position: relative;
+    display: inline-block;
+  }
+  
+.static_image,
+.gif_image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.2s ease;
+}
+  
+.static_image {
+    /* border: 1px solid blue; */
+    width: 120px;
+    
+    /* height: 122.59px; */
+    opacity: 1;
+}
+
+.gif_image {
+    /* border: 1px solid red; */
+    opacity: 0;
+    width: 103px;
+    margin: 6px 0px 15px 12px;
+    /* height: 122.59px; */
+}
+
+.image_container:hover .static_image {
+opacity: 0;
+}
+
+.image_container:hover .gif_image {
+opacity: 1;
+}

@@ -24,6 +24,7 @@ const Header = () => {
               textTransform: "capitalize",
               fontSize: "16px",
               marginTop: "38px",
+              fontFamily: 'Inter',
             }}
             onClick={()=>{setOpen(!open)}}
           >
@@ -31,37 +32,29 @@ const Header = () => {
           </Button>
           <div className={`${open ? styles.active : styles.inactive} ${styles.dropdown_menu}` }>
             <div>
-              <DropdownItem img="/bear.png" text={"Bear"} onClick link="https://timmousk.com/blog/react-conditional-classname/"/>
-              <DropdownItem img="/bull.png" text={"Bull"} link="https://www.w3schools.com/css/css_align.asp"/>
-              <DropdownItem img="/zoo.png" text={"ZooEx"} link=""/>
+              <DropdownItem img="/bear.png" text={"Bear"} link="https://github.com"/>
+              <DropdownItem img="/bull.png" text={"Bull"} link="https://github.com"/>
+              <DropdownItem img="/zoo.png" text={"ZooEx"} link="https://github.com"/>
             </div>
           </div>
         </div>
 
-        <div
-          style={{
-            paddingLeft: "32px",
-          }}
-        >
+        <div style={{ paddingLeft: "32px", }}>
           <Button
             style={{
               color: "white",
               textTransform: "capitalize",
               fontSize: "16px",
               marginTop: "38px",
-
+              fontFamily: 'Inter',
             }}
           >
             {/* {"Zoo Doc"} */}
             Zoo Doc
           </Button>
         </div>
-        <div
-          style={{
-            paddingLeft: "20px",
-          }}
-        >
-          <Button className={styles.header_container_right_enter}>
+        <div style={{ paddingLeft: "20px", }} >
+          <Button style={{fontFamily: 'Inter',}} className={styles.header_container_right_enter}>
             Enter the Zoo
           </Button>
         </div>
@@ -71,21 +64,37 @@ const Header = () => {
 };
 
 const DropdownItem = (props) => {
+
+  const handleClick = () => {
+    console.log("hi there", props.text);
+    window.open(props.link)
+  }
+
   return (
-    <a className="linkItem" href={props.link} target="blank">
+    <Button 
+      onClick={handleClick}
+      sx={{
+        '&:hover': {
+          color: '#1CCD58',
+          backgroundColor: 'yellow',
+          backgroundColor: 'rgba(121, 255, 167, 0.04)',
+          boxShadow: '0px 0px 40px 0px rgba(0, 0, 0, 0.20)',
+          backdropFilter: 'blur(45px)',
+        },
+        width: '100%',
+        borderRadius: "10px",
+        color: "white", 
+        textTransform: "capitalize",
+        fontFamily: 'Inter',
+        fontSize: "14px",
+      }}
+      >       
       <div className={styles.dropdownItem} >
         <img src={props.img} alt="" />
         <p className={styles.itemText}>{props.text}</p>
       </div>
-    </a>
-
+    </Button>
   );
-  // return (
-  //   <div className={styles.dropdownItem}>
-  //     <img src={props.img} alt="" />
-  //     <a href={props.link}>{props.text}</a>
-  //   </div>
-  // );
 }
 
 export default Header;

@@ -74,11 +74,12 @@
 .item_text_title{
   display: flex;
   height: 20px;
-  width: 109px;
+  width: auto;
   margin-left: 11px;
   margin-top: 29px;
   font-size: 14px;
   color: #BBCFAB;
+  /* border: 1px solid red; */
 }
 
 .item_value{

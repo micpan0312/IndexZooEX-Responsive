@@ -37,7 +37,6 @@ const Home = () => {
         <img src="/joinZoo_right.png" alt="" className={styles.joinZoo_right} />
         <img src="/joinZoo_left.png" alt="" className={styles.joinZoo_left} />
       </div>
-      
       <Footer />
     </div>
   );

@@ -1,4 +1,5 @@
 .container_box {
+  font-family: 'Inter', sans-serif;
   width: 100%;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -88,7 +89,7 @@
   position: absolute;
   width: 900px;
   right: -380px;
-  bottom: -420px;
+  bottom: -380px;
   z-index: 1;
 }
 

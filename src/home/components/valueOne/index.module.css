@@ -6,15 +6,12 @@
   /* border: 2px solid yellow; */
 }
 
-/**/
-
 .left_box {
-  padding-right: 80px;
+  padding-right: 20px;
   padding-top: 60px;
   display: flex;
   flex-direction: column;
-  /* height: 600px; */
-  /* width: 700px; */
+  width: 700px;
   margin-left: 48px;
   /* border: 2px solid red; */
 }
@@ -25,6 +22,7 @@
   background-image: linear-gradient(#dcf45d, #2cbd35);
   font-size: 60px;
   font-weight: bold;
+  /* border: 2px solid pink; */
 }
 
 .left_box_info {
@@ -56,6 +54,7 @@
 
 .right_box_img{
   /* border: 2px solid blue; */
+  /* left: 100px; */
   width: 60vw;
   height: 67vh;
   position: relative;
@@ -63,6 +62,7 @@
 
 .needle{
   /* border: 2px solid pink; */
+  /* left: 100px; */
   position: absolute;
   margin-left: 6.8vw;
   margin-top: 16.5vh;
