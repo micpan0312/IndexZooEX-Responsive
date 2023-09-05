@@ -1,70 +1,79 @@
+
 .box_container{
     width: 100%;
     /* add in height to fix the box */
     /* height: 750px; */
-    padding: 100px 120px 200px 120px;
+    padding: 100px 50px 100px 150px;
+    /* border: 2px solid white; */
 }
 
 .box{
     width: 100%;
-    /* height: 200px; */
+    height: 500px;
     display: flex;
     width: 100%;
     flex-direction: row;
+    justify-content: space-between;
+    /* border: 2px solid orange; */
 }
 
 .box_left{
-    flex: 1.2;
+    /* flex: 1.2; */
     display: flex;
+    width: 70%;
+    /* margin-right: 300px; */
     flex-direction: column;
     position: relative;
+    /* border: 2px solid blue; */
 }
 
 .box_left_title{
     font-size: 40px;
-    padding-left: 95px;
+    padding-left: 70px;
     background-clip: text;
     color: transparent;
     font-weight: bold;
     background-image: linear-gradient(#dcf45d, #2cbd35);
+    width: 100%;
+    /* border: 2px solid greenyellow; */
 }
 
 .box_left_img_box{
     width: 100%;
-    padding: 40px;
-}
-
-.box_left_img_value{
-    width: 100%;
     height: 100%;
+    /* border: 10px solid green; */
 }
 
 .img{
     position: absolute;
     display: block;
     margin: 0 auto;
-    margin-left: 60px;
+    margin-top: 20px;
+    margin-left: 100px;
     padding-left: 0px;
-    width: 450px;
-
+    width: 480px;
+    /* border: 2px solid cyan; */
     z-index: 1;
 }
 
 .bkg{
     position: absolute;
     display: block;
-    margin: 0 auto;
-    width: 500px;
+    margin-left: 100px;
+    width: 600px;
     z-index: 1;
-
+    /* border: 2px solid gray; */
 }
 
 .box_right{
+    width: 40%;
     flex: 1;
     display: flex;
     flex-direction: column;
     padding-right: 50px;
-    padding-left: 100px;
+    /* padding-left: 100px; */
+    /* margin-left: 500px; */
+    /* border: 2px solid yellow; */
 }
 
 .box_right_silder_box{
@@ -79,7 +88,6 @@
     height: 10px;
     background-color: gray;
     border-radius: 5px;
-
 }
 
 
@@ -89,13 +97,12 @@
     height: 10px;
     background-color: #2cbd35;
     border-radius: 5px;
-    
 }
 
 .box_right_value{
     display: flex;
     flex-direction: column;
-
+    /* border: 2px solid red; */
 }
 
 .box_right_value_title{
@@ -107,6 +114,7 @@
     margin-top: 30px;
     padding-left: 15px;
     padding-right: 0px;
+    /* border: 2px solid red; */
 }
 
 
@@ -122,6 +130,7 @@
 
 
 .enter_but {
+    z-index: 1;
     font-weight: bold;
     width: 139px;
     height: 48px;

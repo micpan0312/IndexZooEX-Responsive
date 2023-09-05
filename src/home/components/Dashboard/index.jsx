@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./index.module.css";
 import { Button, Menu, MenuItem } from "@mui/material";
 
-export default function ValueOne() {
+export default function Dashboard() {
   return (
     <div className={styles.box_container}>
       <div className={styles.left_box}>

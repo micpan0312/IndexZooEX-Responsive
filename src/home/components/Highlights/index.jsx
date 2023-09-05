@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./index.module.css";
 
-const ValueThree = () => {
+const Highlights = () => {
   return (
     <div className={styles.outer_box}>
       <div className={styles.highlight_box}>
@@ -63,4 +63,4 @@ const ValueThree = () => {
   );
 };
 
-export default ValueThree;
+export default Highlights;

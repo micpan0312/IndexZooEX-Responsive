@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./index.module.css";
 
-const ValueTwo = () => {
+const stats = () => {
   return (
     <div className={styles.container_box}>
       <img src="/Rectanglebg.png" className={styles.bg} />
@@ -57,4 +57,4 @@ const ValueTwo = () => {
   );
 };
 
-export default ValueTwo;
+export default stats;

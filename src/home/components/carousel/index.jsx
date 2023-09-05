@@ -6,7 +6,7 @@ import { Button, Menu, MenuItem } from "@mui/material";
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
-const CarouselBox = () => {
+const Carousel = () => {
   const defualtData = [
     {
       img: "car1_updated.png",
@@ -32,15 +32,14 @@ const CarouselBox = () => {
   const [activeStep, setActiveStep] = useState(0);
 
   return (
+    
     <div className={styles.box_container}>
       <div className={styles.box}>
         <div className={styles.box_left}>
           <div className={styles.box_left_title}>Key Features</div>
           <div className={styles.box_left_img_box}>
-            <div className={styles.box_left_img_value}>
-              <img src={defualtData[activeStep].img} alt="" className={styles.img} />
-              <img src={defualtData[activeStep].bkg} alt="" className={styles.bkg} />
-            </div>
+            <img src={defualtData[activeStep].img} alt="" className={styles.img} />
+            <img src={defualtData[activeStep].bkg} alt="" className={styles.bkg} />
           </div>
         </div>
         <div className={styles.box_right}>
@@ -91,17 +90,17 @@ const CarouselBox = () => {
                     {val?.title}
                   </div>
                   <div className={styles.box_right_value_info}>{val?.info}</div>
-                  <div style={{ marginTop: "40px" }}>
-                    <Button className={styles.enter_but}>Enter Zoo</Button>
-                  </div>
                 </div>
               );
             })}
           </AutoPlaySwipeableViews>
+          <div style={{ marginTop: "30px" }}>
+            <Button className={styles.enter_but}>Enter Zoo</Button>
+          </div>
         </div>
       </div>
     </div>
   );
 };
 
-export default CarouselBox;
+export default Carousel;
