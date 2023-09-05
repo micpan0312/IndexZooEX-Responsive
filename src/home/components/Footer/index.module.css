@@ -50,7 +50,18 @@
 .left_container_email {
     font-size: 16px;
     color: rgba(231,255,209, 0.8);
+    font-weight: 400;
+    line-height: 24px;
+    width: fit-content;
+    cursor: pointer;
+    /* border: 1px solid greenyellow; */
 }
+
+.left_container_email:hover {
+    color: #1CCC57;
+    cursor: pointer;
+}
+
 .right_container {
     /* border: 2px solid yellowgreen; */
     /* padding-right: 10%; */
@@ -63,13 +74,24 @@
     justify-content: space-evenly;
 }
 
+.right_container p {
+    width: fit-content;
+    /* border: 2px solid cyan; */
+}
+
+.right_container p:hover {
+    color: #1CCC57;
+    cursor: pointer;
+}
+
 .links_container {
     /* border: 2px solid cyan; */
     width: 50%;
 }
 
 .category {
-    padding-bottom: 8x;
+    /* border: 1px solid greenyellow; */
+    margin-top: 0x;
     font-size: 24px;
     color: rgba(231,255,209, 1);
     font-weight: 800;

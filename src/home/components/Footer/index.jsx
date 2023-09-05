@@ -16,7 +16,7 @@ const Footer = () => {
                 </div>
                 <div className={styles.right_container}>
                     <div className={styles.links_container}>
-                        <p className={styles.category}>The Zoo</p>
+                        <h3 className={styles.category}>The Zoo</h3>
                         <p>About Us</p>
                         <p>Blog</p>
                         <p>Zoo Doc</p>
@@ -25,10 +25,10 @@ const Footer = () => {
                         <p>Branding Material</p>
                     </div>
                     <div className={styles.links_container}>
-                    <p className={styles.category}>The Animals</p>
-                    <p>Bear Inverse Token</p>
-                    <p>Fear Volatility Token</p>
-                    <p>Future Animals</p>
+                        <h3 className={styles.category}>The Animals</h3>
+                        <p>Bear Inverse Token</p>
+                        <p>Fear Volatility Token</p>
+                        <p>Future Animals</p>
                     </div>
                 </div>
             </div>
