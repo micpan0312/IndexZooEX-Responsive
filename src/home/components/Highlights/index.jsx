@@ -18,13 +18,9 @@ const Highlights = () => {
               Optimized Trade Routing
             </div>
             <div className={styles.highlight_info}>
-              Compares prices from multiple DEXs and aggregators. By using
-              advanced algorithms, we can route trades to the most liquid markets
-              in real-time, ensuring minimal slippage and maximum returns. Execute
-              trades with confidence, knowing they are getting the best possible
-              deal.
+              ZooEx's optimized trade routing automatically compares prices from multiple DEXs and aggregators to ensure traders always receive the best possible price. By using advanced algorithms, we can route trades to the most liquid markets in real-time, ensuring minimal slippage and maximum returns.
             </div>
-          </div>
+          </div> 
 
           <div className={styles.highlight_section}>
             <div className={styles.highlight_rows_img}>
@@ -37,7 +33,7 @@ const Highlights = () => {
               Limit Order & Stop Loss Order
             </div>
             <div className={styles.highlight_info}>
-              Enable variety of order selections for the best trading experience.
+              ZooEx offers a variety of order selections to provide the best trading experience for users. Our platform supports both limit and stop-loss orders, allowing traders to take advantage of market movements while managing their risks. This flexibility allows ZooEx users to customize their trades to fit their unique trading strategies.
             </div>
           </div>
 
@@ -52,9 +48,7 @@ const Highlights = () => {
               Win Big By Simply Trading
             </div>
             <div className={styles.highlight_info}>
-              Unique fee distribution raffle program that provides users with the
-              chance to win big simply by trading on our platform. The more trades
-              a user makes, the higher their chances of winning.
+              ZooEx offers a unique fee distribution raffle program that provides users with the chance to win big simply by trading on our platform. The more trades a user makes, the higher their chances of winning. The Program has the potential to distribute millions of dollars in fees to lucky users.
             </div>
           </div>
         </div>
