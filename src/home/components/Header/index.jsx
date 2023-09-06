@@ -1,20 +1,32 @@
 import { Button, Menu, MenuItem, Popover } from "@mui/material";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import styles from "./index.module.css";
 import { PhotoSizeSelectActual } from "@mui/icons-material";
+import { useRef } from "react";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
 
-  const handleOpen = () => {
-    setOpen(!open);
-  }
+  let menuRef = useRef();
+
+  useEffect(() => {
+    let handler = (e) => {
+      if(!menuRef.current.contains(e.target)) {
+        setOpen(false);
+      }  
+    };
+
+    document.addEventListener("mousedown", handler);
+    return() => {
+      document.removeEventListener("mousedown", handler);
+    }
+  })
 
   return (
     <div className={styles.header_container}>
       <img src={"/logo.png"} alt="" className={styles.header_container_left} />
-      <div className={styles.header_container_right}>
+      <div className={styles.header_container_right} ref={menuRef}>
         <div>
           <Button 
             id="basic-button"
@@ -53,6 +65,7 @@ const Header = () => {
             Zoo Doc
           </Button>
         </div>
+
         <div style={{ paddingLeft: "20px", }} >
           <Button style={{fontFamily: 'Inter',}} className={styles.header_container_right_enter}>
             Enter the Zoo

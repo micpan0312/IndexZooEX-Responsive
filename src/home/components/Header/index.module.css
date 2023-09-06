@@ -62,19 +62,19 @@
   width: 24px;
   margin: 0px 20px 0px 15px;
   opacity: 1;
-  transition: var(--speed);
 }
 
 .dropdown_menu.active {
   opacity: 1;
   visibility: visible;
-  transform: translateY(0);
-  transition: var(--speed) ease;
+  transform: translateY(0px);
+  transition: all 0.2s ease-out;
+  transition-delay: 0.2s;
 }
 
 .dropdown_menu.inactive {
   opacity: 0;
   visibility: hidden;
-  transform: translateY(-100px);
-  transition: var(--speed) ease;
+  transform: translateY(-8px);
+  transition: all 0.35s ease-in;
 }
