@@ -32,14 +32,14 @@ export default function Dashboard() {
       </div>
       {/* <div className={styles.right_box}>
         <img
-          src={"/oneRightValue1.png"}
+          src={"/dashboard.gif"}
           alt=""
-          className={styles.right_box_img}
+          className={styles.dash}
         />
         <img
-          src={"/needle.gif"}
+          src={"/dashboardBkg.png"}
           alt=""
-          className={styles.needle}
+          className={styles.dash_bkg}
         />
       </div> */}
     </div>
