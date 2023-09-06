@@ -69,12 +69,12 @@
   visibility: visible;
   transform: translateY(0px);
   transition: all 0.2s ease-out;
-  transition-delay: 0.2s;
+  transition-delay: 0.1s;
 }
 
 .dropdown_menu.inactive {
   opacity: 0;
   visibility: hidden;
-  transform: translateY(-8px);
+  transform: translateY(-10px);
   transition: all 0.35s ease-in;
 }
