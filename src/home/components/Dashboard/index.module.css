@@ -170,19 +170,41 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    padding-left: 3%;
+    padding-right: 3%;
+    position: relative;
   }
   
   .right_box_img{
+    display: block;
+    margin: auto;
+
     height: 29.94vh;
+
+    margin: 0 auto;
     position: relative;
+    align-items: center;
+    height: auto;
+    width: 100%;
+
+    /* width:fit-content;
+    align-items: center;
+    margin: auto; */
+    /* border: 1px dashed darkkhaki; */
   }
   
   .needle{
     position: absolute;
-    margin-left: 14vw;
+    margin-left: 12%;
+    margin-top: 15.5%;
+    width: 40%;
+    height: 20%; 
+
+    /* margin-left: 14vw;
     margin-top: 7.5vh;
     width: 41.5vw;
-    height: 6.5vh; 
+    height: 6.5vh;  */
+
     /* border: 1px solid yellow; */
   }
 
