@@ -106,8 +106,8 @@
 .needle{
   position: absolute;
   padding-left: 13%;
-  padding-right: 44%;
-  margin-top: 18%;
+  padding-right: 44.5%;
+  margin-top: 17%;
   width: 100%;
   height: auto;
   /* border: 1px solid palegreen; */
@@ -139,7 +139,7 @@
   border: 1px dashed pink;
 } */
 
-@media (max-width: 576px) {
+@media (max-width: 1260px) {
   .box_container {
     width: 100%;
     margin: 0;
@@ -228,7 +228,7 @@
     align-items: center;
     height: auto;
     width: 100%;
-    border: 1px dashed darkkhaki;
+    /* border: 1px dashed darkkhaki; */
   }
   
   .needle{
