@@ -14,9 +14,16 @@ const Home = () => {
   return (
     <div className={styles.container_box}>
       <div className={styles.box1}>
-        <img src="/header_left.png" alt="" className={styles.left} />
-        <img src="/header_middle-1.png" alt="" className={styles.middle} />
-        <img src="/header_right.png" alt="" className={styles.right} />
+        <div className={styles.desktop_bkg}>
+          <img src="/header_left.png" alt="" className={styles.left} />
+          <img src="/header_middle-1.png" alt="" className={styles.middle} />
+          <img src="/header_right.png" alt="" className={styles.right} />
+        </div>
+        
+        <div className={styles.mobile_bkg}>
+          <img src="/mobile_dash_bkg.png" alt="" className={styles.mobile_dash} />
+          <img src="/mobile_dash_right.png" alt="" className={styles.mobile_dash_r} />
+        </div>
         <Header />
         <Dashboard />
       </div>
