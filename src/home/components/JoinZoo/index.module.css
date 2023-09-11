@@ -63,3 +63,9 @@
     /* box-shadow: 0 0 10000px 10000000px black inset; */
     width: 100%;
 }
+
+@media(max-width:1260px){
+    .bull_w_bkg{
+        display: none;
+    }
+}

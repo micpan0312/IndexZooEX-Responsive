@@ -95,7 +95,7 @@ const Carousel = () => {
             })}
           </AutoPlaySwipeableViews>
           <div style={{ marginTop: "30px" }}>
-            <Button className={styles.enter_but}>Enter Zoo</Button>
+            <Button className={styles.enter_but}>Enter</Button>
           </div>
         </div>
       </div>

@@ -104,3 +104,32 @@
   background: rgba(217, 255, 214, 0.29);
   margin-top: 26px;
 }
+
+@media(max-width:1260px){
+  .container_box{
+    height: 50vh;  
+  }
+
+  .value_box{
+    flex-direction: column;
+  }
+
+  .item_box{
+    justify-content: center;
+  }
+
+  .sep_bar{
+    width: 75%;
+    height: 0.5px;
+    flex-direction: column;
+    margin-left: 12%; 
+  }
+
+  }
+
+  
+
+  
+
+  
+
