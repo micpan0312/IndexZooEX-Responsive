@@ -65,13 +65,9 @@
 }
 
 @media(max-width:1260px){
-    /* .bull_w_bkg{
-        display: none;
-    } */
-
     .join_box{
-        width: 297px;
-        height: 164px;
+        width: 80%;
+        height: auto;
         padding-left: 0px;
         padding-right: 0px;
         margin-right: 0px;
@@ -80,6 +76,16 @@
         flex-direction: column;
         display: flex;
         margin-top: 100px;
+    }
+
+    .bull_w_bkg {
+        position: relative;
+        /* border: 2px solid pink; */
+        top: -50px;
+        z-index: 0;
+        /* box-shadow: 0 0 10000px 10000000px black inset; */
+        width: 100%;
+        margin-left: 10%;
     }
 
     .join_title{
@@ -118,7 +124,7 @@
         height: 50px;
         flex-direction: row;
         background-color: rgba(25, 33, 25, 0.6);
-        padding: 11px 17px 10px 24px;
+        /* padding: 11px 17px 10px 24px; */
         align-items: center;
     }
 
