@@ -97,3 +97,111 @@
     font-weight: 800;
 }
 
+@media(max-width:1260px){
+    .footer_container {
+        top: 0px;
+        position: relative;
+        width: 80%;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* border-bottom: 2px solid pink; */
+    }
+
+    .footer_top {
+        /* border: 2px solid pink; */
+        /* width: 70%;
+        height: 500px; */
+        width: 100%;
+        height:auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* margin-top: 200px;
+        margin-bottom: 200px; */
+        justify-content: space-between;
+    }
+
+    .footer_bottom {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        border-top: 2px solid rgba(255, 255, 255, 0.1);
+        color: rgba(231,255,209, 0.8);
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .left_container {
+        /* border: 2px solid lightblue;  */
+        padding: 0%;
+        /* line-height: 24px; */
+        width: 100%;
+        height: auto;
+        color: rgba(231,255,209, 1);
+        font-size: 12px;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+
+    .left_container img {
+        margin-top: 25px;
+        /* width: 95px; */
+        width: 47px;
+        height: 18.377px;
+    }
+
+    .left_container_text{
+        line-height: normal;
+        margin-top: 0%;
+        margin-bottom: 0%;
+    }
+
+    .left_container_email {
+        font-size: 10px;
+        color: rgba(231,255,209, 0.8);
+        font-weight: 400;
+        line-height: 0px;
+        width: fit-content;
+        cursor: pointer;
+        margin-bottom: 40px;
+        margin-top: -5px;
+        /* border: 1px solid greenyellow; */
+    }
+
+    .right_container {
+        /* border: 2px solid yellowgreen; */
+        /* padding-right: 10%; */
+        width: 100%;
+        height: auto;
+        color: rgba(231,255,209, 0.7);
+        font-size: 12px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .right_container p {
+        width: fit-content;
+        /* border: 2px solid cyan; */
+        font-size: 12px;
+        line-height: 15px;
+
+    }
+
+    .category {
+        /* border: 1px solid greenyellow; */
+        margin-top: 0%;
+        font-size: 16px;
+        color: rgba(231,255,209, 1);
+        font-weight: 700;
+    }
+
+
+
+}
+
