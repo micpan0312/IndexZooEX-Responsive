@@ -91,6 +91,7 @@ const Carousel = () => {
                   </div>
                   <div className={styles.box_right_value_info}>{val?.info}</div>
                 </div>
+                
               );
             })}
           </AutoPlaySwipeableViews>
@@ -98,6 +99,9 @@ const Carousel = () => {
             <Button className={styles.enter_but}>Enter</Button>
           </div>
         </div>
+      </div>
+      <div className={styles.info}> 
+        {defualtData[activeStep].info}
       </div>
     </div>
   );
