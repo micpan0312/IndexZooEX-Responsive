@@ -3,7 +3,6 @@
   width: 100%;
   overflow-y: hidden;
   overflow-x: hidden;
-  /* background-color: black; */
   background-color: #050301;
   align-items: center;
   display: flex;
@@ -136,4 +135,56 @@
     /* border: 1px dashed cyan; */
   }
   
+  .keyfeature {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    left: 0px;
+    bottom: 0;
+    /* border: 1px dashed sandybrown; */
+  }
+  
+  .product_bkg_right {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    right: 0px;
+    bottom: 0px;
+    /* border: 1px dashed pink; */
+  }
+  
+  .product_bkg {
+    display: none;
+  }
+  
+  .joinZoo_right {
+    position: absolute;
+    width: 60%;
+    height: auto;
+    right: 0;
+    bottom: 40px;
+    /* border: 2px solid yellow; */
+  }
+  
+  .joinZoo_left {
+    position: absolute;
+    width: 60%;
+    height: auto;
+    left: 0;
+    bottom: 20px;
+    /* border: 2px solid red; */
+  }
+  
+  .pawR {
+    /* border: 2px solid red; */
+    opacity: 0.2;
+    width: 850px;
+    right: -350px;
+    bottom: -50px;
+  }
+  
+  .pawL {
+    /* border: 2px solid red; */
+    display: none;
+  }
 }  

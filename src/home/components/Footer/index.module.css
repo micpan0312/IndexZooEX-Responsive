@@ -1,12 +1,11 @@
 .footer_container {
-    top: -200px;
+    margin-top: -200px; 
     position: relative;
     width: 75%;
-    height: 435px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* border-bottom: 2px solid pink; */
+    /* border: 2px solid pink; */
 }
 
 .footer_top {
@@ -99,22 +98,20 @@
 
 @media(max-width:1260px){
     .footer_container {
-        top: -80px;
-        margin: 0;
+        top: 0px;
+        margin-top: -100px;
+        /* margin: 0; */
         padding: 0;
         position: relative;
         width: 80%;
-        height: 50vh;
         display: flex;
         flex-direction: column;
         align-items: center;
-        /* border-bottom: 2px solid pink; */
+        /* border: 2px solid pink; */
     }
 
     .footer_top {
         /* border: 2px solid pink; */
-        /* width: 70%;
-        height: 500px; */
         width: 100%;
         height:auto;
         display: flex;
@@ -127,8 +124,6 @@
 
     .footer_bottom {
         width: 100%;
-        height: auto;
-        margin-top: 20px;
         border-top: 2px solid rgba(255, 255, 255, 0.1);
         color: rgba(231,255,209, 0.8);
         font-size: 10px;
@@ -137,8 +132,8 @@
 
     .left_container {
         /* border: 2px solid lightblue;  */
-        padding: 0%;
-        /* line-height: 24px; */
+        padding: 0;
+        padding-right: 5%;
         width: 100%;
         height: auto;
         color: rgba(231,255,209, 1);
@@ -177,14 +172,13 @@
 
     .right_container {
         /* border: 2px solid yellowgreen; */
-        /* padding-right: 10%; */
         width: 100%;
         height: auto;
         color: rgba(231,255,209, 0.7);
         font-size: 12px;
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
 
     .right_container p {
@@ -192,7 +186,6 @@
         /* border: 2px solid cyan; */
         font-size: 12px;
         line-height: 15px;
-
     }
 
     .category {
@@ -203,7 +196,11 @@
         font-weight: 700;
     }
 
-
+    .links_container {
+        /* border: 2px solid cyan; */
+        width: 40%;
+        justify-content: flex-start;
+    }
 
 }
 
