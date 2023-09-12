@@ -99,7 +99,9 @@
 
 @media(max-width:1260px){
     .footer_container {
-        top: 0px;
+        top: -80px;
+        margin: 0;
+        padding: 0;
         position: relative;
         width: 80%;
         height: 50vh;

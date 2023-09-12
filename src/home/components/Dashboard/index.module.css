@@ -146,8 +146,8 @@
     padding: 0;
     display: flex;
     flex-direction: column;
-    /* border: 2px solid red; */
     flex-direction: column-reverse;
+    /* border: 2px solid red; */
   }
   
   .left_box {
@@ -166,7 +166,11 @@
     background-image: linear-gradient(#dcf45d, #2cbd35);
     font-size: 30px;
     font-weight: 600;
+    line-height: 32px;
+    letter-spacing: -0.66px;
+    padding: 0 1%;
     text-align: center;
+    margin-bottom: 5px;
     /* border: 2px solid pink; */
   }
   
