@@ -20,7 +20,7 @@ export default function Dashboard() {
       </div>
       <div className={styles.right_box}>
         <img
-          src={"/oneRightValue1.png"}
+          src={"/dashboard.png"}
           alt=""
           className={styles.right_box_img}
         />

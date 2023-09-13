@@ -146,10 +146,10 @@
   
   .product_bkg_right {
     position: absolute;
-    width: 100%;
-    height: auto;
-    right: 0px;
-    bottom: 0px;
+    width: auto;
+    height: 100%;
+    right: 0;
+    bottom: -30%;
     /* border: 1px dashed pink; */
   }
   
@@ -178,9 +178,9 @@
   .pawR {
     /* border: 2px solid red; */
     opacity: 0.2;
-    width: 100%;
+    width: 130%;
     height: auto;
-    right: -35%;
+    right: -56%;
     bottom: 7%;
   }
   
