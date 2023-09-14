@@ -100,7 +100,7 @@
   align-items: center;
   height: auto;
   max-width: 100%;
-  border: 1px dashed darkkhaki;
+  /* border: 1px dashed darkkhaki; */
 }
 
 .needle{
@@ -110,7 +110,7 @@
   margin-top: 17%;
   width: 100%;
   height: auto;
-  border: 1px solid palegreen;
+  /* border: 1px solid palegreen; */
 }
 
 
@@ -139,7 +139,7 @@
   border: 1px dashed pink;
 } */
 
-@media (max-width: 1260px) {
+@media (max-width: 1366px) {
   .box_container {
     width: 100%;
     margin: 0;

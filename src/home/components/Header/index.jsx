@@ -67,6 +67,7 @@ const Header = () => {
           <div style={{ paddingLeft: "32px", }}>
             <Button
               style={{
+                width: "80px",
                 color: "white",
                 textTransform: "capitalize",
                 fontSize: "16px",
@@ -79,7 +80,7 @@ const Header = () => {
             </Button>
           </div>
 
-          <div style={{ paddingLeft: "20px", }} >
+          <div style={{ paddingLeft: "40px", }} >
             <Button style={{fontFamily: 'Inter',}} className={styles.header_container_right_enter}>
               Enter the Zoo
             </Button>
