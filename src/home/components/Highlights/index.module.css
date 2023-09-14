@@ -111,11 +111,12 @@ opacity: 1;
 @media(max-width: 1366px){
     .outer_box{
         width: 100%;
-        margin-top: 60px;
+        margin-top: 10%;
         padding-left: 0%;
         position: relative;
         z-index: 2;
     }
+
     .highlight_box{
        /* border: 1px solid orange; */
         margin-left: 10%;

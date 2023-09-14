@@ -34,7 +34,7 @@ const Carousel = () => {
   return (
     
     <div className={styles.box_container}>
-      <div className={styles.box}>
+      <div className={styles.box_desktop}>
         <div className={styles.box_left}>
           <div className={styles.box_left_title}>Key Features</div>
           <div className={styles.box_left_img_box}>
@@ -100,8 +100,72 @@ const Carousel = () => {
           </div>
         </div>
       </div>
-      <div className={styles.info}> 
-        {defualtData[activeStep].info}
+
+      <div className={styles.box_mobile}>
+        <div className={styles.box_top}>
+          <div className={styles.box_top_title}>Key Features</div>
+          <div className={styles.box_silder_box}>
+            <div
+            onClick={()=> {
+              setActiveStep(0)
+            }}
+              className={
+                activeStep == 0
+                  ? styles.box_right_silder_box_s
+                  : styles.box_right_silder_box_u
+              }
+            ></div>
+            <div
+                 onClick={()=> {
+                  setActiveStep(1)
+                }}
+              className={
+                activeStep == 1
+                  ? styles.box_right_silder_box_s
+                  : styles.box_right_silder_box_u
+              }
+            ></div>
+            <div
+                 onClick={()=> {
+                  setActiveStep(2)
+                }}
+              className={
+                activeStep == 2
+                  ? styles.box_right_silder_box_s
+                  : styles.box_right_silder_box_u
+              }
+            ></div>
+          </div>
+          
+          <AutoPlaySwipeableViews
+            axis={"x"}
+            step={activeStep}
+            onChangeIndex={(step) => {
+              console.log(step);
+              setActiveStep(step);
+            }}
+          >
+            {defualtData.map((val, index) => {
+              return (
+                <div className={styles.box_top_value}>
+                  <div className={styles.box_top_value_title}>{val?.title}</div>
+                  <div className={styles.box_top_value_info}>{val?.info}</div>
+                </div>
+                
+              );
+            })}
+          </AutoPlaySwipeableViews>
+        </div>
+        <div className={styles.box_bottom}>
+          <div className={styles.box_bottom_left}>
+            <Button className={styles.enter_but}>Enter</Button>
+          </div>
+          <div className={styles.box_bottom_right}>
+            <div className={styles.box_left_img_box}>
+              <img src={defualtData[activeStep].img} alt="" className={styles.img} />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

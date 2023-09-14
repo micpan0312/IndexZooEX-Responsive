@@ -137,10 +137,10 @@
   
   .keyfeature {
     position: absolute;
-    width: 90%;
-    height: 90%;
-    left: 0px;
-    bottom: 0;
+    width: 190%;
+    height: 110%;
+    /* left: 25%; */
+    top: 25%;
     /* border: 1px dashed sandybrown; */
   }
   
