@@ -1,8 +1,9 @@
 import { useState } from "react";
 import styles from "./index.module.css";
-import SwipeableViews from "react-swipeable-views";
+// import SwipeableViews from "react-swipeable-views";
 import { autoPlay } from "react-swipeable-views-utils";
 import { Button, Menu, MenuItem } from "@mui/material";
+import SwipeableViews from 'react-swipeable-views-react-18-fix';
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
