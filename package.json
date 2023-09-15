@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@emotion/cache": "latest",
-    "@emotion/react": "^11.11.1",
+    "@emotion/react": "latest",
     "@emotion/server": "latest",
     "@emotion/styled": "latest",
     "@mui/icons-material": "latest",
@@ -20,7 +20,7 @@
     "prop-types": "latest",
     "react": "latest",
     "react-dom": "latest",
-    "react-swipeable-views": "latest"
+    "react-swipeable-views": "^0.13.3"
   },
   "devDependencies": {
     "eslint": "latest",
