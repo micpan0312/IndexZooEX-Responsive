@@ -30,7 +30,7 @@ const Header = () => {
           <img src={"/logo_mobile.png"} alt="Zoo Logo" className={styles.mobile_logo} />
         </div>
         <div className={styles.mobile_header_right}>
-          <Button style={{fontFamily: 'Inter'}} className={styles.mobile_enter}>
+          <Button className={styles.mobile_enter}>
             Enter the Zoo
           </Button>
           <img src={"/mobile_more_btn.png"} alt="More Button" className={styles.more_btn} />
