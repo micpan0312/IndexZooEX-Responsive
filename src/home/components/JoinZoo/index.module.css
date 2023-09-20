@@ -91,14 +91,14 @@
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
         z-index: 1;
-        gap: 10px;
+        gap: 20px;
         /* border: 1px dashed palegreen; */
     }
 
     .join_info{
         border-radius: 10px;
         padding: 0;
-        margin: 0;
+        margin: 0 auto;
         display: flex;
         justify-content: flex-start;
         width: 145px;
@@ -107,6 +107,7 @@
         background-color: rgba(25, 33, 25, 0.6);
         align-items: center;
         flex-shrink: 0;
+        /* border: 1px dashed red; */
     }
 
     .join_info img {
