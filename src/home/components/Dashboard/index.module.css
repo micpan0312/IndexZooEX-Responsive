@@ -211,8 +211,7 @@
   }
 
   .enter_but:hover {
-    background: radial-gradient(270.64% 270% at 50% -160%, #15D264 0%, #2CBD35 36.26%, #DCF45D 92.54%);
-    backdrop-filter: blur(15px);
+    background: radial-gradient(at top right, #15d264, #2cbd35, #dcf45d);
   }
   
   /* with needle .gif */

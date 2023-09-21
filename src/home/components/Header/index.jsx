@@ -72,51 +72,46 @@ const Header = () => {
           <img src={checkbox} alt="More Button" className={styles.more_btn} onClick={()=>{setPopUpMenu(!popUpMenu)}}/>
         </div>
 
-         <div className={`${popUpMenu ? styles.active : styles.inactive} ${styles.mobile_menu}`} >
-          <div className = {styles.mask}></div>
-          <div>
-            <Button 
-              id="basic-button"
-              endIcon={<KeyboardArrowDownIcon />}
-              style={{
-                color: "white",
-                textTransform: "capitalize",
-                fontSize: "16px",
-                marginTop: "38px",
-                fontFamily: 'Inter',
-              }}
-              onClick={()=>{setMobile(!mobile)}}   ref={mobileRef} 
-            >
-              Products
-            </Button>
+        <div className={`${popUpMenu ? styles.active : styles.inactive} ${styles.mobile_menu}`} >
+          <div className = {styles.mask}>
+            <div>
+              <Button 
+                id="basic-button"
+                endIcon={<KeyboardArrowDownIcon />}
+                style={{
+                  marginLeft: '30px',
+                  textTransform: "capitalize",
+                }}
+                className={styles.mobile_prod}
+                onClick={()=>{setMobile(!mobile)}}   
+                ref={mobileRef} 
+              >
+                Products
+              </Button>
 
-            <div className={`${mobile ? styles.active : styles.inactive} ${styles.dropdown_menu}`}>
-              <div>
-                <DropdownItem img="/bear.png" text={"Bear"} link="https://github.com"/>
-                <DropdownItem img="/bull.png" text={"Bull"} link="https://github.com"/>
-                <DropdownItem img="/zoo.png" text={"ZooEx"} link="https://github.com"/>
+              <div className={`${mobile ? styles.active : styles.inactive} ${styles.dropdown_menu}`}>
+                <div>
+                  <DropdownItem img="/bear.png" text={"Bear"} link="https://github.com"/>
+                  <DropdownItem img="/bull.png" text={"Bull"} link="https://github.com"/>
+                  <DropdownItem img="/zoo.png" text={"ZooEx"} link="https://github.com"/>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div style={{ paddingLeft: "32px", }}>
-            <Button
-              id = "zoo-doc"
-              style={{
-                width: "80px",
-                color: "white",
-                textTransform: "capitalize",
-                fontSize: "16px",
-                marginTop: "38px",
-                fontFamily: 'Inter',
-              }}
-            >
-              {/* {"Zoo Doc"} */}
-              Zoo Doc
-            </Button>
+            <div style={{ paddingLeft: "32px", }}>
+              <Button
+                id = "zoo-doc"
+                style={{
+                  marginRight: '30px',
+                  textTransform: "capitalize",
+                }}
+                className={styles.mobile_zooDoc}
+              >
+                Zoo Doc
+              </Button>
+            </div>
           </div>
-
-          </div>
+        </div>
       </div>
 
       <div className={styles.header_container}>
@@ -157,7 +152,6 @@ const Header = () => {
                 fontFamily: 'Inter',
               }}
             >
-              {/* {"Zoo Doc"} */}
               Zoo Doc
             </Button>
           </div>
@@ -177,7 +171,7 @@ const DropdownItem = (props) => {
 
   const handleClick = () => {
     console.log("hi there", props.text);
-    window.open(props.link)
+    window.open(props.link);
   }
 
   // button click color effect
@@ -209,40 +203,3 @@ const DropdownItem = (props) => {
 }
 
 export default Header;
-
-
-{/* <div>
-<Button
-  id="basic-button"
-  aria-controls={open ? "basic-menu" : undefined}
-  aria-haspopup="true"
-  aria-expanded={open ? "true" : undefined}
-  onClick={() => {
-    setOpen(true);
-  }}
-  endIcon={<KeyboardArrowDownIcon />}
-  style={{
-    color: "white",
-    textTransform: "capitalize",
-    fontSize: "16px",
-    marginTop: "38px",
-  }}
->
-  Products
-</Button>
-<Menu
-  id="basic-menu"
-  open={open}
-  anchorEl={open}
-  onClose={() => {
-    setOpen(false);
-  }}
-  MenuListProps={{
-    "aria-labelledby": "basic-button",
-  }}
->
-  <MenuItem>Bear</MenuItem>
-  <MenuItem>Bull</MenuItem>
-  <MenuItem>ZooEx</MenuItem>
-</Menu>
-</div> */}

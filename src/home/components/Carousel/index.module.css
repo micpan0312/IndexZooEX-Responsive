@@ -277,6 +277,10 @@
         font-size: 12px;
     }
 
+    .enter_but:hover {
+        background: radial-gradient(at top right, #15d264, #2cbd35, #dcf45d);
+    }
+
     .mbsw_img{
         display: block;
         margin: 0 0 0 auto;
