@@ -154,42 +154,15 @@ const Carousel = () => {
                     <div className={styles.box_top_value_info}>{val?.info}</div>
                     <img className={styles.mbsw_img} src={val?.img} />
                   </div>
-                  {/* <div className={styles.box_bottom}>
-                    <div className={styles.box_bottom_left}></div>
-                    <div className={styles.box_bottom_right}>
-                      <img className={styles.mbsw_img} src={val?.img} />
-                    </div>
-                  </div> */}
                 </div>
               );
             })}
           </AutoPlaySwipeableViews>
-          <div className={styles.box_bottom_left1}>
+          <div className={styles.box_bottom_left}>
             <Button className={styles.enter_but}>Enter</Button>
           </div>
 
         </div>
-        {/* <div className={styles.box_bottom}>
-          <div className={styles.box_bottom_left}>
-            <Button className={styles.enter_but}>Enter</Button>
-          </div>
-          <div className={styles.box_bottom_right}>
-            <AutoPlaySwipeableViews
-            axis={"x"}
-            step={activeStep}
-            onChangeIndex={(step) => {
-              console.log(step);
-              setActiveStep(step);
-            }} 
-            >
-              {defualtData.map((val, index) => {
-                return (
-                    <img className={styles.mbsw_img} src={val?.img} />
-                );
-              })}
-            </AutoPlaySwipeableViews>
-          </div>
-        </div> */}
       </div>
     </div>
   );
