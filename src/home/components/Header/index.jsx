@@ -7,8 +7,17 @@ import { useRef } from "react";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
+  const [popUpMenu, setPopUpMenu] = useState(false);
+  const [mobile, setMobile] = useState(false);
 
+  
+  //switch mobile menu button image when click
+  const checkbox = popUpMenu? "/mobile_close_btn.png": "/mobile_more_btn.png";
+  
+  // click outside to close the menu
   let menuRef = useRef();
+  let ref = useRef();
+  let mobileRef = useRef();
 
   useEffect(() => {
     let handler = (e) => {
@@ -23,9 +32,36 @@ const Header = () => {
     }
   })
 
+  useEffect(() => {
+    let MenuHandler = (e) => {
+      if(!ref.current.contains(e.target)) {
+        setPopUpMenu(false);
+      }  
+    };
+
+    document.addEventListener("mousedown", MenuHandler);
+    return() => {
+      document.removeEventListener("mousedown", MenuHandler);
+    }
+  })
+
+  useEffect(() => {
+    let MobileHandler = (e) => {
+      if(!mobileRef.current.contains(e.target)) {
+        setMobile(false);
+      }  
+    };
+
+    document.addEventListener("mousedown", MobileHandler);
+    return() => {
+      document.removeEventListener("mousedown", MobileHandler);
+    }
+  })
+
+  // mobile more btn function
   return (
     <div>
-      <div className={styles.mobile_header_container}>
+      <div className={styles.mobile_header_container} ref = {ref}>
         <div className={styles.mobile_header_left}>
           <img src={"/logo_mobile.png"} alt="Zoo Logo" className={styles.mobile_logo} />
         </div>
@@ -33,8 +69,54 @@ const Header = () => {
           <Button className={styles.mobile_enter}>
             Enter the Zoo
           </Button>
-          <img src={"/mobile_more_btn.png"} alt="More Button" className={styles.more_btn} />
+          <img src={checkbox} alt="More Button" className={styles.more_btn} onClick={()=>{setPopUpMenu(!popUpMenu)}}/>
         </div>
+
+         <div className={`${popUpMenu ? styles.active : styles.inactive} ${styles.mobile_menu}`} >
+          <div className = {styles.mask}></div>
+          <div>
+            <Button 
+              id="basic-button"
+              endIcon={<KeyboardArrowDownIcon />}
+              style={{
+                color: "white",
+                textTransform: "capitalize",
+                fontSize: "16px",
+                marginTop: "38px",
+                fontFamily: 'Inter',
+              }}
+              onClick={()=>{setMobile(!mobile)}}   ref={mobileRef} 
+            >
+              Products
+            </Button>
+
+            <div className={`${mobile ? styles.active : styles.inactive} ${styles.dropdown_menu}`}>
+              <div>
+                <DropdownItem img="/bear.png" text={"Bear"} link="https://github.com"/>
+                <DropdownItem img="/bull.png" text={"Bull"} link="https://github.com"/>
+                <DropdownItem img="/zoo.png" text={"ZooEx"} link="https://github.com"/>
+              </div>
+            </div>
+          </div>
+
+          <div style={{ paddingLeft: "32px", }}>
+            <Button
+              id = "zoo-doc"
+              style={{
+                width: "80px",
+                color: "white",
+                textTransform: "capitalize",
+                fontSize: "16px",
+                marginTop: "38px",
+                fontFamily: 'Inter',
+              }}
+            >
+              {/* {"Zoo Doc"} */}
+              Zoo Doc
+            </Button>
+          </div>
+
+          </div>
       </div>
 
       <div className={styles.header_container}>
@@ -98,6 +180,7 @@ const DropdownItem = (props) => {
     window.open(props.link)
   }
 
+  // button click color effect
   return (
     <Button 
       onClick={handleClick}
