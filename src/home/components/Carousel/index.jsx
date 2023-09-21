@@ -148,16 +148,25 @@ const Carousel = () => {
           >
             {defualtData.map((val, index) => {
               return (
-                <div className={styles.box_top_value}>
-                  <div className={styles.box_top_value_title}>{val?.title}</div>
-                  <div className={styles.box_top_value_info}>{val?.info}</div>
+                <div>
+                  <div className={styles.box_top_value}>
+                    <div className={styles.box_top_value_title}>{val?.title}</div>
+                    <div className={styles.box_top_value_info}>{val?.info}</div>
+                  </div>
+                  <div className={styles.box_bottom}>
+                    <div className={styles.box_bottom_left}>
+                      <Button className={styles.enter_but}>Enter</Button>
+                    </div>
+                    <div className={styles.box_bottom_right}>
+                      <img className={styles.mbsw_img} src={val?.img} />
+                    </div>
+                  </div>
                 </div>
-                
               );
             })}
           </AutoPlaySwipeableViews>
         </div>
-        <div className={styles.box_bottom}>
+        {/* <div className={styles.box_bottom}>
           <div className={styles.box_bottom_left}>
             <Button className={styles.enter_but}>Enter</Button>
           </div>
@@ -177,7 +186,7 @@ const Carousel = () => {
               })}
             </AutoPlaySwipeableViews>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
