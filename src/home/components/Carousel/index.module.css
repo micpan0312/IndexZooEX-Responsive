@@ -161,7 +161,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        border: 3px dashed orangered;
+        /* border: 3px dashed orangered; */
     }
 
     .box_desktop {
@@ -176,7 +176,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        border: 2px dashed turquoise;
+        /* border: 2px dashed turquoise; */
     }
 
     .box_top {
@@ -185,7 +185,7 @@
         height: fit-content;
         flex-direction: column;
         position: relative;
-        border: 2px dashed blue;
+        /* border: 2px dashed blue; */
     }
 
     .box_top_title{
@@ -197,7 +197,7 @@
         font-size: 24px;
         padding: 0;
         margin-bottom: 25px;
-        border: 2px solid greenyellow;
+        /* border: 2px solid greenyellow; */
     }
 
     .box_silder_box{
@@ -225,7 +225,7 @@
     .box_top_value{
         display: flex;
         flex-direction: column;
-        border: 2px solid yellow;
+        /* border: 2px solid yellow; */
     }
 
     .box_top_value_title{
@@ -241,11 +241,12 @@
     .box_top_value_info{
         font-size: 12px;
         font-style: normal;
-        padding-right: 14%;
+        padding-right: 10%;
         color: rgba(217, 255, 214, 0.60);        
         font-weight: 400;
         line-height: 16px;
         height: fit-content;
+        /* border: 2px dashed pink; */
     }
 
     .box_bottom {
@@ -256,17 +257,25 @@
         margin: 0;
         padding: 0;
         position: relative;
-        border: 2px dashed orange;
+        /* border: 2px dashed orange; */
     }
 
     .box_bottom_left {
         width: 30%;
-        border: 5px dashed red;
+        /* border: 5px dashed red; */
+    }
+
+    .box_bottom_left1 {
+        position: relative;
+        width: fit-content;
+        top: -18vh;
+        height: fit-content;
+        /* border: 5px dashed white; */
     }
 
     .enter_but {
         display: flex !important;
-        margin: 10px 0;
+        margin: 0;
         width: 69px;
         height: 30px;
         padding: 4px 19px;
@@ -289,7 +298,7 @@
         flex-direction: row;
         justify-content: space-around;
         position: relative;
-        border: 5px dashed pink;
+        /* border: 5px dashed pink; */
     }
 
     .mbsw_img{
@@ -299,7 +308,7 @@
         padding: 0;
         height: max(155px, 20vh);
         width: auto;
-        border: 1px dashed cyan;
+        /* border: 1px dashed cyan; */
     }
     
     /* .mb_img{
