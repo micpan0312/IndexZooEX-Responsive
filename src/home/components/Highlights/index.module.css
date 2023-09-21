@@ -108,7 +108,7 @@ opacity: 0;
 opacity: 1;
 }
 
-@media(max-width: 1024px){
+@media(max-width: 1366px){
     .outer_box{
         width: 100%;
         margin-top: 10%;
