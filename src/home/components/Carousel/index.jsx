@@ -162,16 +162,13 @@ const Carousel = () => {
             <Button className={styles.enter_but}>Enter</Button>
           </div>
           <div className={styles.box_bottom_right}>
-            {/* <div className={styles.box_mb_img_box}>
-              <img src={defualtData[activeStep].img} alt="" className={styles.mb_img} />
-            </div> */}
             <AutoPlaySwipeableViews
             axis={"x"}
             step={activeStep}
             onChangeIndex={(step) => {
               console.log(step);
               setActiveStep(step);
-            }} className={styles.box_mb_img_box}
+            }} 
             >
               {defualtData.map((val, index) => {
                 return (
