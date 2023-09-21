@@ -29,8 +29,8 @@ const Home = () => {
       </div>
       <Stats />
       <div className={styles.box1}> 
-        <Carousel />
         <img src="/keyfeature.png" alt="" className={styles.keyfeature} />
+        <Carousel />
       </div>
       <div className={styles.box1}>
         <img src="/product_bkg_right.png" alt="" className={styles.product_bkg_right} />

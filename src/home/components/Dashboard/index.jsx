@@ -30,18 +30,6 @@ export default function Dashboard() {
           className={styles.needle}
         />
       </div>
-      {/* <div className={styles.right_box}>
-        <img
-          src={"/dashboard.gif"}
-          alt=""
-          className={styles.dash}
-        />
-        <img
-          src={"/dashboardBkg.png"}
-          alt=""
-          className={styles.dash_bkg}
-        />
-      </div> */}
     </div>
   );
 }
