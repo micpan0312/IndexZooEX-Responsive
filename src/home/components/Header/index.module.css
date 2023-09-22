@@ -252,6 +252,10 @@
     opacity: 1;
   }
 
+  .dropdownItem p {
+    font-family: 'Inter', sans-serif;
+  }
+
   .mobile_header_container.dropdown_menu.active {
     opacity: 1;
     visibility: visible;
