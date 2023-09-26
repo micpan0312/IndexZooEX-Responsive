@@ -16,14 +16,14 @@ export default function Index() {
 
         {/* <!-- Open Graph / Facebook --> */}
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://metatags.io/" />
+        <meta property="og:url" content="https://main.d39rhn5yqla36r.amplifyapp.com/" />
         <meta property="og:title" content="Zoo" />
         <meta property="og:description" content="A decentralized margin trading protocol that enables leverage trading for any tokens" />
         <meta property="og:image" content={imageUrl} />
 
         {/* <!-- Twitter --> */}
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://metatags.io/" />
+        <meta property="twitter:url" content="https://main.d39rhn5yqla36r.amplifyapp.com/" />
         <meta property="twitter:title" content="Zoo" />
         <meta property="twitter:description" content="A decentralized margin trading protocol that enables leverage trading for any tokens" />
         <meta property="twitter:image" content={imageUrl} />
