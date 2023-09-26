@@ -13,7 +13,8 @@ export default function MyDocument(props) {
       <Head>
         {/* PWA primary color */}
         <meta name="theme-color" content={theme.palette.primary.main} />
-        <link rel="shortcut icon" href="/favicon.ico" sizes="any" />
+        <link rel="shortcut icon" href="/favicon.ico" sizes="16x16" />
+
         <meta name="emotion-insertion-point" content="" />
         {emotionStyleTags}
       </Head>
