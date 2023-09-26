@@ -67,7 +67,7 @@ const Header = () => {
         </div>
         <div className={styles.mobile_header_right}>
           <Button className={styles.mobile_enter}>
-            Enter the Zoo
+            Enter Zoo
           </Button>
           <img src={checkbox} alt="More Button" className={styles.more_btn} onClick={()=>{setPopUpMenu(!popUpMenu)}}/>
         </div>
@@ -158,7 +158,7 @@ const Header = () => {
 
           <div style={{ paddingLeft: "40px", }} >
             <Button style={{fontFamily: 'Inter',}} className={styles.header_container_right_enter}>
-              Enter the Zoo
+              Enter Zoo
             </Button>
           </div>
         </div>

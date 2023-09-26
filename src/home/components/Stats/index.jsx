@@ -30,7 +30,7 @@ const stats = () => {
         >
           <div className={styles.item_img2}></div>
           <div className={styles.item_right}>
-            <div className={styles.item_text_title}>Jackpot Number</div>
+            <div className={styles.item_text_title}>Jackpot</div>
             <div className={styles.item_value}>$215,819,063</div>
           </div>
         </div>

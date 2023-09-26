@@ -7,7 +7,7 @@ export default function Dashboard() {
     <div className={styles.box_container}>
       <div className={styles.left_box}>
         <div className={styles.left_box_title}>
-          {`Unleash your\ntrading power\nwith ZooEx`}
+          {`Unleash Your\nTrading Power\nWith ZooEx`}
         </div>
         <div className={styles.left_box_info}>
           {`ZooEx is a decentralized margin trading protocol that enables leverage trading for any tokens`}
