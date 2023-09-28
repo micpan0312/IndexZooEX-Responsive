@@ -158,15 +158,14 @@ const Header = () => {
               id="basic-button"
               endIcon={<KeyboardArrowDownIcon />}
               style={{
-                color: "white",
                 textTransform: "capitalize",
                 fontSize: "16px",
                 marginTop: "38px",
-                fontFamily: "Inter",
               }}
               onClick={() => {
                 setOpen(!open);
               }}
+              className={styles.btn}
             >
               Products
             </Button>
@@ -199,22 +198,18 @@ const Header = () => {
             <Button
               style={{
                 width: "80px",
-                color: "white",
                 textTransform: "capitalize",
                 fontSize: "16px",
                 marginTop: "38px",
-                fontFamily: "Inter",
               }}
+              className={styles.btn}
             >
               Zoo Doc
             </Button>
           </div>
 
           <div style={{ paddingLeft: "40px" }}>
-            <Button
-              style={{ fontFamily: "Inter" }}
-              className={styles.header_container_right_enter}
-            >
+            <Button className={styles.header_container_right_enter}>
               Enter Zoo
             </Button>
           </div>

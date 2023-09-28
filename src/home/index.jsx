@@ -25,7 +25,7 @@ const Home = () => {
       <div className={styles.box1}>
         <div className={styles.desktop_bkg}>
           <img src="/header_left.png" alt="" className={styles.left} />
-          <img src="/header_middle-1.png" alt="" className={styles.middle} />
+          <img src="/header_middle.png" alt="" className={styles.middle} />
           <img src="/header_right.png" alt="" className={styles.right} />
         </div>
 

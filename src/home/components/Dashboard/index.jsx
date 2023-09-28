@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./index.module.css";
 import { Button, Menu, MenuItem } from "@mui/material";
-import Image from "next/image";
+// import Image from "next/image";
 
 export default function Dashboard() {
   return (
@@ -18,13 +18,13 @@ export default function Dashboard() {
         </div>
       </div>
       <div className={styles.right_box}>
-        <Image
+        <img
           src="/dashboard.png"
           alt="Trading dashboard"
-          width={0}
-          height={0}
-          sizes="100vw"
-          style={{ width: "100%", height: "auto" }}
+          // width={0}
+          // height={0}
+          // sizes="100vw"
+          // style={{ width: "100%", height: "auto" }}
           className={styles.right_box_img}
         />
         <img

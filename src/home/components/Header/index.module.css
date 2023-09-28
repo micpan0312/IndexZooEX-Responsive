@@ -33,7 +33,11 @@
   display: flex;
   flex-direction: row;
   color: white;
+}
+
+.btn {
   font-family: "Inter", sans-serif;
+  color: white;
 }
 
 .header_container_right_enter {
