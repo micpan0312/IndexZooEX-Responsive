@@ -3,7 +3,7 @@ import styles from "./index.module.css";
 // import SwipeableViews from "react-swipeable-views";
 import { autoPlay } from "react-swipeable-views-utils";
 import { Button, Menu, MenuItem } from "@mui/material";
-import SwipeableViews from 'react-swipeable-views-react-18-fix';
+import SwipeableViews from "react-swipeable-views-react-18-fix";
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
@@ -24,8 +24,8 @@ const Carousel = () => {
     {
       img: "car3_updated.png",
       bkg: "car3-bkg.png",
-      title: "Unique \"JackPot\" Trading Fees Distribution",
-      info: "ZooEx is revolutionizing the way trading fees are distributed by offering a unique \"JackPot\" program. We distribute 100% of trading fees, providing traders with the opportunity to earn more while adding an exciting element of chance to the trading experience.",
+      title: 'Unique "JackPot" Trading Fees Distribution',
+      info: 'ZooEx is revolutionizing the way trading fees are distributed by offering a unique "JackPot" program. We distribute 100% of trading fees, providing traders with the opportunity to earn more while adding an exciting element of chance to the trading experience.',
     },
   ];
 
@@ -33,22 +33,32 @@ const Carousel = () => {
   const [activeStep, setActiveStep] = useState(0);
 
   return (
-    
     <div className={styles.box_container}>
       <div className={styles.box_desktop}>
         <div className={styles.box_left}>
           <div className={styles.box_left_title}>Key Features</div>
           <div className={styles.box_left_img_box}>
-            <img src={defualtData[activeStep].img} alt="" className={styles.img} />
-            <img src={defualtData[activeStep].bkg} alt="" className={styles.bkg} />
+            <img
+              src={defualtData[activeStep].img}
+              loading="lazy"
+              alt=""
+              className={styles.img}
+            />
+            <img
+              // src={defualtData[activeStep].bkg}
+              loading="lazy"
+              alt=""
+              className={styles.bkg}
+            />
           </div>
         </div>
         <div className={styles.box_right}>
           <div className={styles.box_right_silder_box}>
             <div
-            onClick={()=> {
-              setActiveStep(0)
-            }}
+              onClick={() => {
+                setActiveStep(0);
+                console.log("[[click 0, step:", activeStep, "]]");
+              }}
               className={
                 activeStep == 0
                   ? styles.box_right_silder_box_s
@@ -56,9 +66,10 @@ const Carousel = () => {
               }
             ></div>
             <div
-                 onClick={()=> {
-                  setActiveStep(1)
-                }}
+              onClick={() => {
+                setActiveStep(1);
+                console.log("[[click 1, step:", activeStep, "]]");
+              }}
               className={
                 activeStep == 1
                   ? styles.box_right_silder_box_s
@@ -66,9 +77,10 @@ const Carousel = () => {
               }
             ></div>
             <div
-                 onClick={()=> {
-                  setActiveStep(2)
-                }}
+              onClick={() => {
+                setActiveStep(2);
+                console.log("[[click 2, step:", activeStep, "]]");
+              }}
               className={
                 activeStep == 2
                   ? styles.box_right_silder_box_s
@@ -79,20 +91,28 @@ const Carousel = () => {
           <AutoPlaySwipeableViews
             axis={"x"}
             step={activeStep}
-            onChangeIndex={(step) => {
-              console.log(step);
-              setActiveStep(step);
+            onChangeIndex={(activeStep) => {
+              console.log(activeStep);
+              setActiveStep(activeStep);
             }}
+            interval={10000}
           >
             {defualtData.map((val, index) => {
               return (
                 <div className={styles.box_right_value}>
                   <div className={styles.box_right_value_title}>
+                    {/* <p>val?.title:</p> */}
                     {val?.title}
+                    {/* <p>-------------</p>
+                    <p>defualtData:</p>
+                    {defualtData[activeStep].title} */}
                   </div>
-                  <div className={styles.box_right_value_info}>{val?.info}</div>
+                  <div className={styles.box_right_value_info}>
+                    {val?.info}
+                    {/* <p>-------------</p>
+                    {defualtData[activeStep].info} */}
+                  </div>
                 </div>
-                
               );
             })}
           </AutoPlaySwipeableViews>
@@ -107,9 +127,9 @@ const Carousel = () => {
           <div className={styles.box_top_title}>Key Features</div>
           <div className={styles.box_silder_box}>
             <div
-            onClick={()=> {
-              setActiveStep(0)
-            }}
+              onClick={() => {
+                setActiveStep(0);
+              }}
               className={
                 activeStep == 0
                   ? styles.box_right_silder_box_s
@@ -117,9 +137,9 @@ const Carousel = () => {
               }
             ></div>
             <div
-                 onClick={()=> {
-                  setActiveStep(1)
-                }}
+              onClick={() => {
+                setActiveStep(1);
+              }}
               className={
                 activeStep == 1
                   ? styles.box_right_silder_box_s
@@ -127,9 +147,9 @@ const Carousel = () => {
               }
             ></div>
             <div
-                 onClick={()=> {
-                  setActiveStep(2)
-                }}
+              onClick={() => {
+                setActiveStep(2);
+              }}
               className={
                 activeStep == 2
                   ? styles.box_right_silder_box_s
@@ -137,7 +157,7 @@ const Carousel = () => {
               }
             ></div>
           </div>
-          
+
           <AutoPlaySwipeableViews
             axis={"x"}
             step={activeStep}
@@ -150,9 +170,15 @@ const Carousel = () => {
               return (
                 <div>
                   <div className={styles.box_top_value}>
-                    <div className={styles.box_top_value_title}>{val?.title}</div>
+                    <div className={styles.box_top_value_title}>
+                      {val?.title}
+                    </div>
                     <div className={styles.box_top_value_info}>{val?.info}</div>
-                    <img className={styles.mbsw_img} src={val?.img} />
+                    <img
+                      className={styles.mbsw_img}
+                      loading="lazy"
+                      src={val?.img}
+                    />
                   </div>
                 </div>
               );
@@ -161,7 +187,6 @@ const Carousel = () => {
           <div className={styles.box_bottom_left}>
             <Button className={styles.enter_but}>Enter</Button>
           </div>
-
         </div>
       </div>
     </div>

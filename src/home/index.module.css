@@ -1,5 +1,5 @@
 .container_box {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   width: 100%;
   overflow-y: hidden;
   overflow-x: hidden;
@@ -10,14 +10,13 @@
   position: relative;
 }
 
-
-.box1{
+.box1 {
   width: 100%;
   height: auto;
   position: relative;
 }
 
-.left{
+.left {
   position: absolute;
   top: -200px;
   left: -700px;
@@ -26,15 +25,15 @@
   rotate: -170deg;
 }
 
-.right{
+.right {
   position: absolute;
   top: 0px;
   right: 0px;
   width: 900px;
   height: 845px;
-} 
+}
 
-.middle{
+.middle {
   position: absolute;
   top: 0px;
   right: 0px;
@@ -47,6 +46,7 @@
   height: 1000px;
   left: 0px;
   bottom: -300px;
+  /* border: 1px dashed yellow; */
 }
 
 .product_bkg_right {
@@ -97,14 +97,14 @@
   /* border: 2px solid red; */
   opacity: 0.4;
   position: absolute;
-  height: 700px;  
+  height: 700px;
   left: -430px;
   bottom: 60px;
   z-index: 1;
-  transform: rotate(105deg)
+  transform: rotate(105deg);
 }
 
-.mobile_bkg{
+.mobile_bkg {
   display: none;
 }
 
@@ -113,11 +113,11 @@
     display: none;
   }
 
-  .mobile_bkg{
+  .mobile_bkg {
     display: block;
   }
 
-  .mobile_dash{
+  .mobile_dash {
     position: absolute;
     top: 4.8vh;
     left: -5vw;
@@ -134,7 +134,7 @@
     width: 100vw;
     /* border: 1px dashed cyan; */
   }
-  
+
   .keyfeature {
     position: absolute;
     width: 190%;
@@ -143,7 +143,7 @@
     top: 25%;
     /* border: 1px dashed sandybrown; */
   }
-  
+
   .product_bkg_right {
     position: absolute;
     width: auto;
@@ -152,11 +152,11 @@
     bottom: -30%;
     /* border: 1px dashed pink; */
   }
-  
+
   .product_bkg {
     display: none;
   }
-  
+
   .joinZoo_right {
     position: absolute;
     width: 60%;
@@ -165,7 +165,7 @@
     bottom: 40px;
     /* border: 2px solid yellow; */
   }
-  
+
   .joinZoo_left {
     position: absolute;
     width: 60%;
@@ -174,7 +174,7 @@
     bottom: 20px;
     /* border: 2px solid red; */
   }
-  
+
   .pawR {
     /* border: 2px solid red; */
     opacity: 0.2;
@@ -183,9 +183,9 @@
     right: -56%;
     bottom: 7%;
   }
-  
+
   .pawL {
     /* border: 2px solid red; */
     display: none;
   }
-}  
+}

@@ -4,11 +4,14 @@ import styles from "./index.module.css";
 const stats = () => {
   return (
     <div className={styles.container_box}>
-      <img src="/Rectanglebg.png" className={styles.bg} />
+      <img src="/Rectanglebg.png" loading="lazy" className={styles.bg} />
       <div className={styles.value_box}>
-        <div className={styles.item_box} style={{
-          flex:'426'
-        }}>
+        <div
+          className={styles.item_box}
+          style={{
+            flex: "426",
+          }}
+        >
           <div className={styles.item_img1}></div>
 
           <div className={styles.item_right}>
@@ -21,12 +24,10 @@ const stats = () => {
 
         <div
           className={styles.item_box}
-          style={
-            {
-              // width: "377.64px",
-              flex:'351'
-            }
-          }
+          style={{
+            // width: "377.64px",
+            flex: "351",
+          }}
         >
           <div className={styles.item_img2}></div>
           <div className={styles.item_right}>
@@ -39,12 +40,10 @@ const stats = () => {
 
         <div
           className={styles.item_box}
-          style={
-            {
-              flex:'342'
-              // width: "370.54px",
-            }
-          }
+          style={{
+            flex: "342",
+            // width: "370.54px",
+          }}
         >
           <div className={styles.item_img3}></div>
           <div className={styles.item_right}>

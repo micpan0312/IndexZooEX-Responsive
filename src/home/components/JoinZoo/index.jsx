@@ -11,24 +11,26 @@ const JoinZoo = () => {
         <Button className={styles.join_info} onClick={() => {}}>
           <img
             src="/twitter.png"
+            loading="lazy"
             style={{
               paddingLeft: "20px",
               paddingTop: "16px",
               paddingBottom: "16px",
-              height: "70px"
+              height: "70px",
             }}
           ></img>
-          <div className={styles.join_info_text}>Twitter</div> 
+          <div className={styles.join_info_text}>Twitter</div>
         </Button>
 
         <Button className={styles.join_info}>
           <img
             src="/discord.png"
+            loading="lazy"
             style={{
               paddingLeft: "20px",
               paddingTop: "16px",
               paddingBottom: "16px",
-              height: "70px"
+              height: "70px",
             }}
           ></img>
           <div className={styles.join_info_text}>Discord</div>
@@ -37,11 +39,12 @@ const JoinZoo = () => {
         <Button className={styles.join_info}>
           <img
             src="/telegram.png"
+            loading="lazy"
             style={{
               paddingLeft: "20px",
               paddingTop: "16px",
               paddingBottom: "16px",
-              height: "70px"
+              height: "70px",
             }}
           ></img>
           <div className={styles.join_info_text}>Telegram</div>
@@ -50,22 +53,29 @@ const JoinZoo = () => {
         <Button className={styles.join_info}>
           <img
             src="/reddit.png"
+            loading="lazy"
             style={{
               paddingLeft: "20px",
               paddingTop: "16px",
               paddingBottom: "16px",
-              height: "70px"
+              height: "70px",
             }}
           ></img>
           <div className={styles.join_info_text}>Reddit</div>
         </Button>
       </div>
-      <div style={{
-        width:"100%",
-        height:"auto",
-        justifyContent:"center"
-      }}>
-        <img src="/bull_w_bkg.jpg" className={styles.bull_w_bkg}></img>  
+      <div
+        style={{
+          width: "100%",
+          height: "auto",
+          justifyContent: "center",
+        }}
+      >
+        <img
+          src="/bull_w_bkg.jpg"
+          loading="lazy"
+          className={styles.bull_w_bkg}
+        ></img>
       </div>
     </div>
   );
