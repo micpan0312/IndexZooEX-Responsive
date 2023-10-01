@@ -8,7 +8,7 @@ import dynamic from "next/dynamic";
 const Home = dynamic(() => import("../src/home/index"));
 
 export default function Index() {
-  const imageUrl = "/thumbnail.jpg";
+  const imageUrl = "/thumbnail.png";
 
   return (
     <ThemeProvider theme={theme}>

@@ -10,7 +10,7 @@ const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 const Carousel = () => {
   const defualtData = [
     {
-      img: "car1_updated.png",
+      img: "car1_updated1.png",
       bkg: "car1-bkg.png",
       title: "Deep Liquidity \r\n for Any Pairs",
       info: "Provide traders with the deepest liquidity possible across all trading pairs by leveraging the liquidity pools on DEXs. Unlike centralized exchanges, ZooEx never trades against its users, ensuring that the platform operates with transparency and fairness.",
