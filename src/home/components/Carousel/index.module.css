@@ -45,8 +45,6 @@
 .img {
   position: absolute;
   display: block;
-
-  /* padding-top: 40px; */
   margin-top: 40px;
   padding-left: 120px;
   height: auto;

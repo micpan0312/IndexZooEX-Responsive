@@ -4,26 +4,24 @@ import styles from "./index.module.css";
 import { autoPlay } from "react-swipeable-views-utils";
 import { Button, Menu, MenuItem } from "@mui/material";
 import SwipeableViews from "react-swipeable-views-react-18-fix";
+import Image from "next/image";
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const Carousel = () => {
   const defualtData = [
     {
-      img: "car1_updated.png",
-      bkg: "car1-bkg.png",
+      img: "/car1_updated.png",
       title: "Deep Liquidity \r\n for Any Pairs",
       info: "Provide traders with the deepest liquidity possible across all trading pairs by leveraging the liquidity pools on DEXs. Unlike centralized exchanges, ZooEx never trades against its users, ensuring that the platform operates with transparency and fairness.",
     },
     {
-      img: "car2_updated.png",
-      bkg: "car2-bkg.png",
+      img: "/car2_updated.png",
       title: "High Leverage at Low Cost",
       info: "Offer competitive interest rates by utilizing lending protocols from top providers like Aave. This allows us to offer high leverage up to 5x on major trading pairs, providing traders with the ability to amplify their gains while keeping costs low.",
     },
     {
-      img: "car3_updated.png",
-      bkg: "car3-bkg.png",
+      img: "/car3_updated.png",
       title: 'Unique "JackPot" Trading Fees Distribution',
       info: 'ZooEx is revolutionizing the way trading fees are distributed by offering a unique "JackPot" program. We distribute 100% of trading fees, providing traders with the opportunity to earn more while adding an exciting element of chance to the trading experience.',
     },
@@ -43,12 +41,6 @@ const Carousel = () => {
               loading="lazy"
               alt=""
               className={styles.img}
-            />
-            <img
-              // src={defualtData[activeStep].bkg}
-              loading="lazy"
-              alt=""
-              className={styles.bkg}
             />
           </div>
         </div>
@@ -95,7 +87,7 @@ const Carousel = () => {
               console.log(activeStep);
               setActiveStep(activeStep);
             }}
-            interval={10000}
+            // interval={10000}
           >
             {defualtData.map((val, index) => {
               return (

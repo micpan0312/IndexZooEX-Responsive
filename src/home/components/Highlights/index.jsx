@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./index.module.css";
+import Image from "next/image";
 
 const Highlights = () => {
   return (
