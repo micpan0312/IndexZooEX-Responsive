@@ -74,13 +74,13 @@ const Home = () => {
       </div>
       <div className={styles.box1}>
         <img
-          src="/product_bkg_right.png"
+          src="/product_bkg_right_min.png"
           loading="lazy"
           alt=""
           className={styles.product_bkg_right}
         />
         <img
-          src="/product_bkg.png"
+          src="/product_bkg_min.png"
           alt=""
           loading="lazy"
           className={styles.product_bkg}
