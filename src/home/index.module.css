@@ -47,7 +47,7 @@
   height: 1000px;
   left: 0px;
   bottom: -300px;
-  /* border: 1px dashed yellow; */
+  /* border: 1px dashed red; */
 }
 
 .product_bkg_right {
@@ -56,7 +56,7 @@
   height: 650px;
   right: 0px;
   bottom: 350px;
-  border: 1px dashed yellow;
+  /* border: 1px dashed yellow; */
 }
 
 .product_bkg {
@@ -66,7 +66,7 @@
   left: 0px;
   bottom: -400px;
   /* z-index: 99; */
-  border: 1px dashed turquoise;
+  /* border: 1px dashed turquoise; */
 }
 
 .joinZoo_right {
