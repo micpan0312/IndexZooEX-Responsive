@@ -1,0 +1,21 @@
+.test {
+  width: 100%;
+  height: 500px;
+  border: 1px dashed royalblue;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.test p {
+  color: white;
+  font-size: 100px;
+  border: 1px dashed pink;
+}
+
+@media (max-width: 1366px) {
+  .test {
+    display: none;
+  }
+}

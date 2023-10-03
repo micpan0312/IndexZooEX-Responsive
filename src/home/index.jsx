@@ -62,7 +62,7 @@ const Home = () => {
         <Header />
         <Dashboard />
       </div>
-      <Stats />
+      {/* <Stats /> */}
       <div className={styles.box1}>
         <img
           src="/keyfeature.webp"
@@ -86,7 +86,7 @@ const Home = () => {
           className={styles.product_bkg}
         />
         <img src="/paw_right.gif" loading="lazy" className={styles.pawR}></img>
-        <img src="/paw_left.gif" loading="lazy" className={styles.pawL}></img>
+        <img src="/paw_left.gif" className={styles.pawL}></img>
         <Highlights />
       </div>
       <div className={styles.box1}>

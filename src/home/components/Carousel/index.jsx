@@ -5,6 +5,7 @@ import { autoPlay } from "react-swipeable-views-utils";
 import { Button, Menu, MenuItem } from "@mui/material";
 import SwipeableViews from "react-swipeable-views-react-18-fix";
 import Image from "next/image";
+import CarouselDSK from "../CarouselDSK";
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
@@ -32,7 +33,7 @@ const Carousel = () => {
 
   return (
     <div className={styles.box_container}>
-      <div className={styles.box_desktop}>
+      {/* <div className={styles.box_desktop}>
         <div className={styles.box_left}>
           <div className={styles.box_left_title}>Key Features</div>
           <div className={styles.box_left_img_box}>
@@ -87,23 +88,14 @@ const Carousel = () => {
               console.log(activeStep);
               setActiveStep(activeStep);
             }}
-            // interval={10000}
           >
             {defualtData.map((val, index) => {
               return (
                 <div className={styles.box_right_value}>
                   <div className={styles.box_right_value_title}>
-                    {/* <p>val?.title:</p> */}
                     {val?.title}
-                    {/* <p>-------------</p>
-                    <p>defualtData:</p>
-                    {defualtData[activeStep].title} */}
                   </div>
-                  <div className={styles.box_right_value_info}>
-                    {val?.info}
-                    {/* <p>-------------</p>
-                    {defualtData[activeStep].info} */}
-                  </div>
+                  <div className={styles.box_right_value_info}>{val?.info}</div>
                 </div>
               );
             })}
@@ -112,8 +104,8 @@ const Carousel = () => {
             <Button className={styles.enter_but}>Enter</Button>
           </div>
         </div>
-      </div>
-
+      </div> */}
+      <CarouselDSK />
       <div className={styles.box_mobile}>
         <div className={styles.box_top}>
           <div className={styles.box_top_title}>Key Features</div>
@@ -186,3 +178,20 @@ const Carousel = () => {
 };
 
 export default Carousel;
+
+// return (
+//   <div className={styles.box_right_value}>
+//     <div className={styles.box_right_value_title}>
+//       <p>val?.title:</p>
+//       {val?.title}
+//       <p>-------------</p>
+//       <p>defualtData:</p>
+//       {defualtData[activeStep].title}
+//     </div>
+//     <div className={styles.box_right_value_info}>
+//       {val?.info}
+//       <p>-------------</p>
+//       {defualtData[activeStep].info}
+//     </div>
+//   </div>
+// );

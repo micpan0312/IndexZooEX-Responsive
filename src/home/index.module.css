@@ -98,13 +98,14 @@
 }
 
 .pawL {
-  /* border: 2px solid red; */
+  /* border: 2px solid thistle; */
   opacity: 0.4;
   position: absolute;
   height: 700px;
   left: -430px;
+  /* left: ; */
   bottom: 60px;
-  z-index: 1;
+  z-index: 5;
   transform: rotate(105deg);
 }
 
