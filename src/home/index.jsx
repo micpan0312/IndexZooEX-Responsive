@@ -1,21 +1,21 @@
 import { useState } from "react";
 import dynamic from "next/dynamic";
 import styles from "./index.module.css";
-import Header from "./components/Header";
-import Dashboard from "./components/Dashboard";
-import Stats from "./components/Stats";
-import Highlights from "./components/Highlights";
-import JoinZoo from "./components/JoinZoo";
-import Carousel from "./components/Carousel";
-import Footer from "./components/Footer";
+// import Header from "./components/Header";
+// import Dashboard from "./components/Dashboard";
+// import Stats from "./components/Stats";
+// import Highlights from "./components/Highlights";
+// import JoinZoo from "./components/JoinZoo";
+// import Carousel from "./components/Carousel";
+// import Footer from "./components/Footer";
 
-// const Header = dynamic(()=>import('../home/components/Header'));
-// const Dashboard = dynamic(()=>import('../home/components/Dashboard'));
-// const Stats = dynamic(()=>import('../home/components/Stats'));
-// const Carousel = dynamic(()=>import('../home/components/Carousel'));
-// const Highlights = dynamic(()=>import('../home/components/Highlights'));
-// const JoinZoo = dynamic(()=>import('../home/components/JoinZoo'));
-// const Footer = dynamic(()=>import('../home/components/Footer'));
+const Header = dynamic(() => import("../home/components/Header"));
+const Dashboard = dynamic(() => import("../home/components/Dashboard"));
+const Stats = dynamic(() => import("../home/components/Stats"));
+const Carousel = dynamic(() => import("../home/components/Carousel"));
+const Highlights = dynamic(() => import("../home/components/Highlights"));
+const JoinZoo = dynamic(() => import("../home/components/JoinZoo"));
+const Footer = dynamic(() => import("../home/components/Footer"));
 
 const Home = () => {
   const [open, setOpen] = useState(false);
@@ -65,7 +65,7 @@ const Home = () => {
       <Stats />
       <div className={styles.box1}>
         <img
-          src="/keyfeature.png"
+          src="/keyfeature.webp"
           loading="lazy"
           alt="Key Feature Bkg"
           className={styles.keyfeature}
