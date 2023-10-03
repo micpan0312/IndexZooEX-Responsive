@@ -17,7 +17,7 @@ const Highlights = () => {
                   className={styles.static_image}
                 />
                 <img
-                  src="/Tail Animation 1.gif"
+                  src="/tail_ani_1.gif"
                   loading="lazy"
                   className={styles.gif_image}
                 />
@@ -44,7 +44,7 @@ const Highlights = () => {
                   className={styles.static_image}
                 />
                 <img
-                  src="/Tail Animation 2.gif"
+                  src="/tail_ani_2.gif"
                   loading="lazy"
                   className={styles.gif_image}
                 />
@@ -72,7 +72,7 @@ const Highlights = () => {
                   className={styles.static_image}
                 />
                 <img
-                  src="/Tail Animation 3.gif"
+                  src="/tail_ani_3.gif"
                   loading="lazy"
                   className={styles.gif_image}
                 />
