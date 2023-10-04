@@ -18,7 +18,7 @@ export default function Dashboard() {
         </div>
       </div>
       <div className={styles.right_box}>
-        <Image
+        <img
           src="/dashboard.png"
           alt="Trading dashboard"
           // width={0}
