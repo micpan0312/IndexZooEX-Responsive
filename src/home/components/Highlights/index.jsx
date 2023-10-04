@@ -11,12 +11,12 @@ const Highlights = () => {
           <div className={styles.highlight_section}>
             <div className={styles.highlight_rows_img}>
               <div className={styles.image_container}>
-                <img
+                <Image
                   src="/data_bar_1.png"
                   loading="lazy"
                   className={styles.static_image}
                 />
-                <img
+                <Image
                   src="/tail_ani_1.gif"
                   loading="lazy"
                   className={styles.gif_image}
@@ -38,12 +38,12 @@ const Highlights = () => {
           <div className={styles.highlight_section}>
             <div className={styles.highlight_rows_img}>
               <div className={styles.image_container}>
-                <img
+                <Image
                   src="/data_bar_2.png"
                   loading="lazy"
                   className={styles.static_image}
                 />
-                <img
+                <Image
                   src="/tail_ani_2.gif"
                   loading="lazy"
                   className={styles.gif_image}
@@ -66,12 +66,12 @@ const Highlights = () => {
           <div className={styles.highlight_section}>
             <div className={styles.highlight_rows_img}>
               <div className={styles.image_container}>
-                <img
+                <Image
                   src="/data_bar_3.png"
                   loading="lazy"
                   className={styles.static_image}
                 />
-                <img
+                <Image
                   src="/tail_ani_3.gif"
                   loading="lazy"
                   className={styles.gif_image}

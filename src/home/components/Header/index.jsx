@@ -4,6 +4,7 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import styles from "./index.module.css";
 import { PhotoSizeSelectActual } from "@mui/icons-material";
 import { useRef } from "react";
+import Image from 'next/image';
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -62,7 +63,7 @@ const Header = () => {
     <div>
       <div className={styles.mobile_header_container} ref={ref}>
         <div className={styles.mobile_header_left}>
-          <img
+          <Image
             src={"/logo_mobile.png"}
             loading="lazy"
             alt="Zoo Logo"
@@ -71,7 +72,7 @@ const Header = () => {
         </div>
         <div className={styles.mobile_header_right}>
           <Button className={styles.mobile_enter}>Enter Zoo</Button>
-          <img
+          <Image
             src={checkbox}
             loading="lazy"
             alt="More Button"
@@ -147,7 +148,7 @@ const Header = () => {
       </div>
 
       <div className={styles.header_container}>
-        <img
+        <Image
           src={"/logo.png"}
           loading="lazy"
           className={styles.header_container_left}
