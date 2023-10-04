@@ -33,78 +33,6 @@ const Carousel = () => {
 
   return (
     <div className={styles.box_container}>
-      {/* <div className={styles.box_desktop}>
-        <div className={styles.box_left}>
-          <div className={styles.box_left_title}>Key Features</div>
-          <div className={styles.box_left_img_box}>
-            <img
-              src={defualtData[activeStep].img}
-              loading="lazy"
-              alt=""
-              className={styles.img}
-            />
-          </div>
-        </div>
-        <div className={styles.box_right}>
-          <div className={styles.box_right_silder_box}>
-            <div
-              onClick={() => {
-                setActiveStep(0);
-                console.log("[[click 0, step:", activeStep, "]]");
-              }}
-              className={
-                activeStep == 0
-                  ? styles.box_right_silder_box_s
-                  : styles.box_right_silder_box_u
-              }
-            ></div>
-            <div
-              onClick={() => {
-                setActiveStep(1);
-                console.log("[[click 1, step:", activeStep, "]]");
-              }}
-              className={
-                activeStep == 1
-                  ? styles.box_right_silder_box_s
-                  : styles.box_right_silder_box_u
-              }
-            ></div>
-            <div
-              onClick={() => {
-                setActiveStep(2);
-                console.log("[[click 2, step:", activeStep, "]]");
-              }}
-              className={
-                activeStep == 2
-                  ? styles.box_right_silder_box_s
-                  : styles.box_right_silder_box_u
-              }
-            ></div>
-          </div>
-          <AutoPlaySwipeableViews
-            axis={"x"}
-            step={activeStep}
-            onChangeIndex={(activeStep) => {
-              console.log(activeStep);
-              setActiveStep(activeStep);
-            }}
-          >
-            {defualtData.map((val, index) => {
-              return (
-                <div className={styles.box_right_value}>
-                  <div className={styles.box_right_value_title}>
-                    {val?.title}
-                  </div>
-                  <div className={styles.box_right_value_info}>{val?.info}</div>
-                </div>
-              );
-            })}
-          </AutoPlaySwipeableViews>
-          <div style={{ marginTop: "30px" }}>
-            <Button className={styles.enter_but}>Enter</Button>
-          </div>
-        </div>
-      </div> */}
       <CarouselDSK />
       <div className={styles.box_mobile}>
         <div className={styles.box_top}>
@@ -195,3 +123,77 @@ export default Carousel;
 //     </div>
 //   </div>
 // );
+{
+  /* <div className={styles.box_desktop}>
+        <div className={styles.box_left}>
+          <div className={styles.box_left_title}>Key Features</div>
+          <div className={styles.box_left_img_box}>
+            <img
+              src={defualtData[activeStep].img}
+              loading="lazy"
+              alt=""
+              className={styles.img}
+            />
+          </div>
+        </div>
+        <div className={styles.box_right}>
+          <div className={styles.box_right_silder_box}>
+            <div
+              onClick={() => {
+                setActiveStep(0);
+                console.log("[[click 0, step:", activeStep, "]]");
+              }}
+              className={
+                activeStep == 0
+                  ? styles.box_right_silder_box_s
+                  : styles.box_right_silder_box_u
+              }
+            ></div>
+            <div
+              onClick={() => {
+                setActiveStep(1);
+                console.log("[[click 1, step:", activeStep, "]]");
+              }}
+              className={
+                activeStep == 1
+                  ? styles.box_right_silder_box_s
+                  : styles.box_right_silder_box_u
+              }
+            ></div>
+            <div
+              onClick={() => {
+                setActiveStep(2);
+                console.log("[[click 2, step:", activeStep, "]]");
+              }}
+              className={
+                activeStep == 2
+                  ? styles.box_right_silder_box_s
+                  : styles.box_right_silder_box_u
+              }
+            ></div>
+          </div>
+          <AutoPlaySwipeableViews
+            axis={"x"}
+            step={activeStep}
+            onChangeIndex={(activeStep) => {
+              console.log(activeStep);
+              setActiveStep(activeStep);
+            }}
+          >
+            {defualtData.map((val, index) => {
+              return (
+                <div className={styles.box_right_value}>
+                  <div className={styles.box_right_value_title}>
+                    {val?.title}
+                  </div>
+                  <div className={styles.box_right_value_info}>{val?.info}</div>
+                </div>
+              );
+            })}
+          </AutoPlaySwipeableViews>
+          <div style={{ marginTop: "30px" }}>
+            <Button className={styles.enter_but}>Enter</Button>
+          </div>
+        </div>
+      </div> */
+}
