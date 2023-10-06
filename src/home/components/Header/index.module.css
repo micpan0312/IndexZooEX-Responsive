@@ -173,6 +173,7 @@
     width: 12%;
     display: block;
     margin-left: 25px;
+    margin-left: auto;
     cursor: pointer;
     z-index: 10;
   }

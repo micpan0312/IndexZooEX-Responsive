@@ -70,7 +70,7 @@ const Header = () => {
           />
         </div>
         <div className={styles.mobile_header_right}>
-          <Button className={styles.mobile_enter}>Enter Zoo</Button>
+          {/* <Button className={styles.mobile_enter}>Enter Zoo</Button> */}
           <img
             src={checkbox}
             loading="lazy"
@@ -122,6 +122,20 @@ const Header = () => {
                     link="https://app.indexzoo.com/bull"
                   />
                   <DropdownItem img="/zoo.png" text={"ZooEx"} link="" />
+                  <Image
+                    src="/comingSoon.png"
+                    alt=""
+                    width={80}
+                    height={80}
+                    loading="lazy"
+                    style={{
+                      position: "absolute",
+                      marginLeft: "-30px",
+                      marginTop: "4px",
+                      height: "auto",
+                      width: "60px",
+                    }}
+                  />
                 </div>
               </div>
             </div>
@@ -184,11 +198,24 @@ const Header = () => {
                   link="https://app.indexzoo.com/bull"
                 />
                 <DropdownItem img="/zoo.png" text={"ZooEx"} link="" />
+                <Image
+                  src="/comingSoon.png"
+                  alt=""
+                  width={80}
+                  height={80}
+                  loading="lazy"
+                  style={{
+                    position: "absolute",
+                    marginLeft: "-43px",
+                    marginTop: "4px",
+                    height: "auto",
+                    width: "60px",
+                  }}
+                />
               </div>
             </div>
           </div>
-
-          <div style={{ paddingLeft: "32px" }}>
+          <div style={{ paddingLeft: "32px", zIndex: "1" }}>
             <Button
               style={{
                 width: "80px",
@@ -200,13 +227,26 @@ const Header = () => {
             >
               Zoo Doc
             </Button>
+            <Image
+              src="/comingSoon.png"
+              alt=""
+              width={80}
+              height={80}
+              loading="lazy"
+              style={{
+                marginLeft: "-25px",
+                marginBottom: "-8px",
+                height: "auto",
+                width: "60px",
+              }}
+            />
           </div>
 
-          <div style={{ paddingLeft: "40px" }}>
+          {/* <div style={{ paddingLeft: "40px" }}>
             <Button className={styles.header_container_right_enter}>
               Enter Zoo
             </Button>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
@@ -218,7 +258,6 @@ const DropdownItem = (props) => {
   //   // console.log("hi there", props.text);
   //   window.open(props.link, "_blank");
   // };
-
   // button click color effect
   return (
     <a href={props.link} target="_blank" rel="noopener noreferrer">

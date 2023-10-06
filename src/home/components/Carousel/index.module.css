@@ -157,7 +157,7 @@
 @media (max-width: 1024px) {
   .box_container {
     padding: 0;
-    margin: 0;
+    margin: 100px 0 0;
     width: 100%;
     display: flex;
     height: fit-content;

@@ -70,7 +70,7 @@ const Home = () => {
         <Header />
         <Dashboard />
       </div>
-      <Stats />
+      {/* <Stats /> */}
       <div className={styles.box1}>
         <Image
           src="/keyfeature.webp"

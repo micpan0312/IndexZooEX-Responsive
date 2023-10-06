@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./index.module.css";
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -46,7 +47,7 @@ const Footer = () => {
           <div className={styles.links_container}>
             <h3 className={styles.category}>Our Products</h3>
             <ul>
-              <li>
+              <li style={{ marginBottom: "8px" }}>
                 <a target="_blank" href="https://www.indexzoo.com">
                   IndexZoo
                 </a>
@@ -55,6 +56,19 @@ const Footer = () => {
                 <a target="_blank" href="">
                   ZooEx
                 </a>
+                <Image
+                  src="/comingSoon.png"
+                  alt=""
+                  width={80}
+                  height={80}
+                  loading="lazy"
+                  style={{
+                    marginLeft: "-10px",
+                    marginBottom: "10px",
+                    height: "auto",
+                    width: "60px",
+                  }}
+                />
               </li>
             </ul>
           </div>
