@@ -17,7 +17,7 @@ const Highlights = dynamic(() => import("../home/components/Highlights"));
 const JoinZoo = dynamic(() => import("../home/components/JoinZoo"));
 const Footer = dynamic(() => import("../home/components/Footer"));
 
-import Image from 'next/image';
+import Image from "next/image";
 
 const Home = () => {
   const [open, setOpen] = useState(false);
@@ -48,13 +48,13 @@ const Home = () => {
         </div>
 
         <div className={styles.mobile_bkg}>
-          <img
+          <Image
             src="/mobile_dash_bkg.png"
             loading="lazy"
             alt=""
             className={styles.mobile_dash}
           />
-          <img
+          <Image
             src="/mobile_dash_right.png"
             loading="lazy"
             alt=""
@@ -66,7 +66,7 @@ const Home = () => {
       </div>
       {/* <Stats /> */}
       <div className={styles.box1}>
-        <img
+        <Image
           src="/keyfeature.webp"
           loading="lazy"
           alt="Key Feature Bkg"
@@ -87,19 +87,23 @@ const Home = () => {
           loading="lazy"
           className={styles.product_bkg}
         />
-        <Image src="/paw_right.gif" loading="lazy" className={styles.pawR}></Image>
+        <Image
+          src="/paw_right.gif"
+          loading="lazy"
+          className={styles.pawR}
+        ></Image>
         <Image src="/paw_left.gif" className={styles.pawL}></Image>
         <Highlights />
       </div>
       <div className={styles.box1}>
         <JoinZoo />
-        <img
+        <Image
           src="/joinZoo_right.png"
           alt=""
           loading="lazy"
           className={styles.joinZoo_right}
         />
-        <img
+        <Image
           src="/joinZoo_left.png"
           alt=""
           loading="lazy"

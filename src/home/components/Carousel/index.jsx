@@ -158,7 +158,7 @@ const Carousel = () => {
                       {val?.title}
                     </div>
                     <div className={styles.box_top_value_info}>{val?.info}</div>
-                    <img
+                    <Image
                       className={styles.mbsw_img}
                       loading="lazy"
                       src={val?.img}
