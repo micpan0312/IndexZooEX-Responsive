@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./index.module.css";
 import { Button, Menu, MenuItem } from "@mui/material";
-// import Image from "next/image";
+import Image from "next/image";
 
 export default function Dashboard() {
   return (
@@ -27,7 +27,7 @@ export default function Dashboard() {
           // style={{ width: "100%", height: "auto" }}
           className={styles.right_box_img}
         />
-        <img
+        <Image
           src="/needle.gif"
           loading="lazy"
           alt="Trading line graph"

@@ -1,7 +1,8 @@
 import React from "react";
 import styles from "./index.module.css";
 import { Button, Menu, MenuItem } from "@mui/material";
-import { Height } from "@mui/icons-material";
+import Image from 'next/image';
+// import { Height } from "@mui/icons-material";
 
 const JoinZoo = () => {
   return (
@@ -9,7 +10,7 @@ const JoinZoo = () => {
       <div className={styles.join_title}>Join the Zoo</div>
       <div className={styles.join_info_box}>
         <Button className={styles.join_info} onClick={() => {}}>
-          <img
+          <Image
             src="/twitter.png"
             loading="lazy"
             style={{
@@ -18,12 +19,12 @@ const JoinZoo = () => {
               paddingBottom: "16px",
               height: "70px",
             }}
-          ></img>
+          ></Image>
           <div className={styles.join_info_text}>Twitter</div>
         </Button>
 
         <Button className={styles.join_info}>
-          <img
+          <Image
             src="/discord.png"
             loading="lazy"
             style={{
@@ -32,12 +33,12 @@ const JoinZoo = () => {
               paddingBottom: "16px",
               height: "70px",
             }}
-          ></img>
+          ></Image>
           <div className={styles.join_info_text}>Discord</div>
         </Button>
 
         <Button className={styles.join_info}>
-          <img
+          <Image
             src="/telegram.png"
             loading="lazy"
             style={{
@@ -46,12 +47,12 @@ const JoinZoo = () => {
               paddingBottom: "16px",
               height: "70px",
             }}
-          ></img>
+          ></Image>
           <div className={styles.join_info_text}>Telegram</div>
         </Button>
 
         <Button className={styles.join_info}>
-          <img
+          <Image
             src="/reddit.png"
             loading="lazy"
             style={{
@@ -60,7 +61,7 @@ const JoinZoo = () => {
               paddingBottom: "16px",
               height: "70px",
             }}
-          ></img>
+          ></Image>
           <div className={styles.join_info_text}>Reddit</div>
         </Button>
       </div>
@@ -71,11 +72,11 @@ const JoinZoo = () => {
           justifyContent: "center",
         }}
       >
-        <img
+        <Image
           src="/bull_w_bkg.jpg"
           loading="lazy"
           className={styles.bull_w_bkg}
-        ></img>
+        ></Image>
       </div>
     </div>
   );

@@ -17,6 +17,8 @@ const Highlights = dynamic(() => import("../home/components/Highlights"));
 const JoinZoo = dynamic(() => import("../home/components/JoinZoo"));
 const Footer = dynamic(() => import("../home/components/Footer"));
 
+import Image from 'next/image';
+
 const Home = () => {
   const [open, setOpen] = useState(false);
 
@@ -85,8 +87,8 @@ const Home = () => {
           loading="lazy"
           className={styles.product_bkg}
         />
-        <img src="/paw_right.gif" loading="lazy" className={styles.pawR}></img>
-        <img src="/paw_left.gif" className={styles.pawL}></img>
+        <Image src="/paw_right.gif" loading="lazy" className={styles.pawR}></Image>
+        <Image src="/paw_left.gif" className={styles.pawL}></Image>
         <Highlights />
       </div>
       <div className={styles.box1}>

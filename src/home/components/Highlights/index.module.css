@@ -82,6 +82,7 @@
     top: 0;
     left: 0;
     transition: opacity 0.2s ease;
+    z-index: 1;
 }
   
 .static_image {
