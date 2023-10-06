@@ -1,22 +1,9 @@
 // import React from "react";
 import styles from "./index.module.css";
-import { Button, Menu, MenuItem, stepLabelClasses } from "@mui/material";
-
-// export default function CarouselDSK() {
-//   return (
-//     <div className={styles.test}>
-//       <p>hello world</p>
-//       <p>sup</p>
-//     </div>
-//   );
-// }
-
+import { Button } from "@mui/material";
 import React, { useState, useEffect } from "react";
-import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
-import { FaQuoteRight } from "react-icons/fa";
 import data from "./data";
-
-import "./index.module.css";
+import Image from "next/image";
 
 function CarouselDSK() {
   const [people, setPeople] = useState(data);
@@ -65,7 +52,13 @@ function CarouselDSK() {
                   key={id}
                   className={`${styles.article_heading} ${styles[position]}`}
                 >
-                  <img src={image} alt={name} className={styles.person_img} />
+                  <Image
+                    src={image}
+                    alt={name}
+                    width={500}
+                    height={500}
+                    className={styles.keyFeat_img}
+                  />
                 </div>
               );
             })}
@@ -120,29 +113,3 @@ function CarouselDSK() {
 }
 
 export default CarouselDSK;
-
-{
-  /* <div className={styles.section_center}>
-  {people.map((person, personIndex) => {
-    const { id, image, name, title, quote } = person;
-    let position = "nextSlide";
-    if (personIndex === index) {
-      position = "activeSlide";
-    }
-    if (
-      personIndex === index - 1 ||
-      (index === 0 && personIndex === people.length - 1)
-    ) {
-      position = "lastSlide";
-    }
-    return (
-      <div key={id} className={`${styles.article_heading} ${styles[position]}`}>
-        <img src={image} alt={name} className={styles.person_img} />
-        <h4>{name}</h4>
-        <p className={styles.title}>{title}</p>
-        <p className={styles.text}>{quote}</p>
-      </div>
-    );
-  })}
-</div>; */
-}

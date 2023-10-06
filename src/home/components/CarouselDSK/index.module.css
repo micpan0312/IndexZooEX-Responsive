@@ -43,13 +43,13 @@
   /* border: 1px dashed palevioletred; */
 }
 
-.person_img {
+.keyFeat_img {
   margin: 0;
   padding: 0;
   width: 85%;
   height: 85%;
   object-fit: contain;
-  /* border: 1px dashed orange; */
+  border: 1px dashed orange;
 }
 
 .rightSection {
