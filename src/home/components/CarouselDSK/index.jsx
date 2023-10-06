@@ -1,6 +1,6 @@
 // import React from "react";
 import styles from "./index.module.css";
-import { Button, Menu, MenuItem } from "@mui/material";
+import { Button, Menu, MenuItem, stepLabelClasses } from "@mui/material";
 
 // export default function CarouselDSK() {
 //   return (
@@ -43,50 +43,106 @@ function CarouselDSK() {
   return (
     <div className={styles.section}>
       <div className={styles.top}>
-        <div className={styles.title}>Key Features</div>
-        <div className={styles.slideshowDots}>
-          {people.map((_, idx) => (
-            <div
-              key={idx}
-              className={`${styles.slideshowDot} ${
-                index === idx ? styles.active : styles
-              }`}
-              onClick={() => {
-                setIndex(idx);
-              }}
-            ></div>
-          ))}
-        </div>
+        <div className={styles.keyHead}>Key Features</div>
       </div>
-
-      <div className={styles.section_center}>
-        {people.map((person, personIndex) => {
-          const { id, image, name, title, quote } = person;
-          let position = "nextSlide";
-          if (personIndex === index) {
-            position = "activeSlide";
-          }
-          if (
-            personIndex === index - 1 ||
-            (index === 0 && personIndex === people.length - 1)
-          ) {
-            position = "lastSlide";
-          }
-          return (
-            <div
-              key={id}
-              className={`${styles.article_heading} ${styles[position]}`}
-            >
-              <img src={image} alt={name} className={styles.person_img} />
-              <h4>{name}</h4>
-              <p className={styles.title}>{title}</p>
-              <p className={styles.text}>{quote}</p>
-            </div>
-          );
-        })}
+      <div className={styles.carousel}>
+        <div className={styles.leftSection}>
+          <div className={styles.section_img}>
+            {people.map((person, personIndex) => {
+              const { id, image, name } = person;
+              let position = "nextSlide";
+              if (personIndex === index) {
+                position = "activeSlide";
+              }
+              if (
+                personIndex === index - 1 ||
+                (index === 0 && personIndex === people.length - 1)
+              ) {
+                position = "lastSlide";
+              }
+              return (
+                <div
+                  key={id}
+                  className={`${styles.article_heading} ${styles[position]}`}
+                >
+                  <img src={image} alt={name} className={styles.person_img} />
+                </div>
+              );
+            })}
+          </div>
+        </div>
+        <div className={styles.rightSection}>
+          <div className={styles.slideshowDots}>
+            {people.map((_, idx) => (
+              <div
+                key={idx}
+                className={`${styles.slideshowDot} ${
+                  index === idx ? styles.active : styles
+                }`}
+                onClick={() => {
+                  setIndex(idx);
+                }}
+              ></div>
+            ))}
+          </div>
+          <div className={styles.section_text}>
+            {people.map((person, personIndex) => {
+              const { id, name, quote } = person;
+              let position = "nextSlide";
+              if (personIndex === index) {
+                position = "activeSlide";
+              }
+              if (
+                personIndex === index - 1 ||
+                (index === 0 && personIndex === people.length - 1)
+              ) {
+                position = "lastSlide";
+              }
+              return (
+                <div
+                  key={id}
+                  className={`${styles.article_heading} ${styles[position]}`}
+                >
+                  <div
+                    className={styles.titleHead}
+                    dangerouslySetInnerHTML={{ __html: name }}
+                  ></div>
+                  <div className={styles.text}>{quote}</div>
+                </div>
+              );
+            })}
+          </div>
+          <Button className={styles.enter_but}>Enter</Button>
+        </div>
       </div>
     </div>
   );
 }
 
 export default CarouselDSK;
+
+{
+  /* <div className={styles.section_center}>
+  {people.map((person, personIndex) => {
+    const { id, image, name, title, quote } = person;
+    let position = "nextSlide";
+    if (personIndex === index) {
+      position = "activeSlide";
+    }
+    if (
+      personIndex === index - 1 ||
+      (index === 0 && personIndex === people.length - 1)
+    ) {
+      position = "lastSlide";
+    }
+    return (
+      <div key={id} className={`${styles.article_heading} ${styles[position]}`}>
+        <img src={image} alt={name} className={styles.person_img} />
+        <h4>{name}</h4>
+        <p className={styles.title}>{title}</p>
+        <p className={styles.text}>{quote}</p>
+      </div>
+    );
+  })}
+</div>; */
+}

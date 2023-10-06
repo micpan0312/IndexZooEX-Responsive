@@ -8,61 +8,88 @@ const JoinZoo = () => {
     <div className={styles.join_box}>
       <div className={styles.join_title}>Join the Zoo</div>
       <div className={styles.join_info_box}>
-        <Button className={styles.join_info} onClick={() => {}}>
-          <img
-            src="/twitter.png"
-            loading="lazy"
-            style={{
-              paddingLeft: "20px",
-              paddingTop: "16px",
-              paddingBottom: "16px",
-              height: "70px",
-            }}
-          ></img>
-          <div className={styles.join_info_text}>Twitter</div>
-        </Button>
-
-        <Button className={styles.join_info}>
-          <img
-            src="/discord.png"
-            loading="lazy"
-            style={{
-              paddingLeft: "20px",
-              paddingTop: "16px",
-              paddingBottom: "16px",
-              height: "70px",
-            }}
-          ></img>
-          <div className={styles.join_info_text}>Discord</div>
-        </Button>
-
-        <Button className={styles.join_info}>
-          <img
-            src="/telegram.png"
-            loading="lazy"
-            style={{
-              paddingLeft: "20px",
-              paddingTop: "16px",
-              paddingBottom: "16px",
-              height: "70px",
-            }}
-          ></img>
-          <div className={styles.join_info_text}>Telegram</div>
-        </Button>
-
-        <Button className={styles.join_info}>
-          <img
-            src="/reddit.png"
-            loading="lazy"
-            style={{
-              paddingLeft: "20px",
-              paddingTop: "16px",
-              paddingBottom: "16px",
-              height: "70px",
-            }}
-          ></img>
-          <div className={styles.join_info_text}>Reddit</div>
-        </Button>
+        <a
+          href={"https://twitter.com/indexzoo"}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Button className={styles.join_info} onClick={() => {}}>
+            <img
+              src="/twitter.png"
+              loading="lazy"
+              style={{
+                paddingLeft: "20px",
+                paddingTop: "16px",
+                paddingBottom: "16px",
+                height: "70px",
+              }}
+            ></img>
+            <div className={styles.join_info_text}>Twitter</div>
+          </Button>
+        </a>
+        <a
+          href={"https://discord.com/invite/peMzgw26Mw"}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Button className={styles.join_info}>
+            <img
+              src="/discord.png"
+              loading="lazy"
+              sx={{
+                color: "white",
+                textTransform: "capitalize",
+                fontFamily: "Inter",
+                fontSize: "14px",
+              }}
+              style={{
+                paddingLeft: "20px",
+                paddingTop: "16px",
+                paddingBottom: "16px",
+                height: "70px",
+              }}
+            ></img>
+            <div className={styles.join_info_text}>Discord</div>
+          </Button>
+        </a>
+        <a
+          href={"https://t.me/indexzoo"}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Button className={styles.join_info}>
+            <img
+              src="/telegram.png"
+              loading="lazy"
+              style={{
+                paddingLeft: "20px",
+                paddingTop: "16px",
+                paddingBottom: "16px",
+                height: "70px",
+              }}
+            ></img>
+            <div className={styles.join_info_text}>Telegram</div>
+          </Button>
+        </a>
+        <a
+          href={"https://www.reddit.com/r/IndexZoo/"}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Button className={styles.join_info}>
+            <img
+              src="/reddit.png"
+              loading="lazy"
+              style={{
+                paddingLeft: "20px",
+                paddingTop: "16px",
+                paddingBottom: "16px",
+                height: "70px",
+              }}
+            ></img>
+            <div className={styles.join_info_text}>Reddit</div>
+          </Button>
+        </a>
       </div>
       <div
         style={{

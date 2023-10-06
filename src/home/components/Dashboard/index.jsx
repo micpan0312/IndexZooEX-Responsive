@@ -21,19 +21,12 @@ export default function Dashboard() {
         <img
           src="/dashboard.png"
           alt="Trading dashboard"
-          // width={0}
-          // height={0}
-          // sizes="100vw"
-          // style={{ width: "100%", height: "auto" }}
           className={styles.right_box_img}
         />
         <img
           src="/needle.gif"
           loading="lazy"
           alt="Trading line graph"
-          // width={800}
-          // height={250}
-          // layout="responsive"
           className={styles.needle}
         />
       </div>

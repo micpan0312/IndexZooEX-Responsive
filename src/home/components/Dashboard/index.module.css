@@ -70,26 +70,6 @@
   backdrop-filter: blur(15px);
 }
 
-/* with needle .gif */
-/* .right_box {
-  display: flex;
-  flex-direction: column;
-  width: 70%;
-}
-
-.right_box_img{
-  height: 75vh;
-  position: relative;
-}
-
-.needle{
-  position: absolute;
-  margin-left: 10vw;
-  margin-top: 20vh;
-  width: 28.5vw;
-  height: 15vh; 
-} */
-
 .right_box {
   display: flex;
   flex-direction: column;

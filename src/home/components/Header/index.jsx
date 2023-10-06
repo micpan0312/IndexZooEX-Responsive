@@ -114,18 +114,14 @@ const Header = () => {
                   <DropdownItem
                     img="/bear.png"
                     text={"Bear"}
-                    link="https://github.com"
+                    link="https://app.indexzoo.com/bear"
                   />
                   <DropdownItem
                     img="/bull.png"
                     text={"Bull"}
-                    link="https://github.com"
+                    link="https://app.indexzoo.com/bull"
                   />
-                  <DropdownItem
-                    img="/zoo.png"
-                    text={"ZooEx"}
-                    link="https://github.com"
-                  />
+                  <DropdownItem img="/zoo.png" text={"ZooEx"} link="" />
                 </div>
               </div>
             </div>
@@ -178,18 +174,14 @@ const Header = () => {
                 <DropdownItem
                   img="/bear.png"
                   text={"Bear"}
-                  link="https://github.com"
+                  link="https://app.indexzoo.com/bear"
                 />
                 <DropdownItem
                   img="/bull.png"
                   text={"Bull"}
-                  link="https://github.com"
+                  link="https://app.indexzoo.com/bull"
                 />
-                <DropdownItem
-                  img="/zoo.png"
-                  text={"ZooEx"}
-                  link="https://github.com"
-                />
+                <DropdownItem img="/zoo.png" text={"ZooEx"} link="" />
               </div>
             </div>
           </div>
@@ -220,36 +212,38 @@ const Header = () => {
 };
 
 const DropdownItem = (props) => {
-  const handleClick = () => {
-    console.log("hi there", props.text);
-    window.open(props.link);
-  };
+  // const handleClick = () => {
+  //   // console.log("hi there", props.text);
+  //   window.open(props.link, "_blank");
+  // };
 
   // button click color effect
   return (
-    <Button
-      onClick={handleClick}
-      sx={{
-        "&:hover": {
-          color: "#1CCD58",
-          backgroundColor: "yellow",
-          backgroundColor: "rgba(121, 255, 167, 0.04)",
-          boxShadow: "0px 0px 40px 0px rgba(0, 0, 0, 0.20)",
-          backdropFilter: "blur(45px)",
-        },
-        width: "100%",
-        borderRadius: "10px",
-        color: "white",
-        textTransform: "capitalize",
-        fontFamily: "Inter",
-        fontSize: "14px",
-      }}
-    >
-      <div className={styles.dropdownItem}>
-        <img src={props.img} loading="lazy" alt="" />
-        <p className={styles.itemText}>{props.text}</p>
-      </div>
-    </Button>
+    <a href={props.link} target="_blank" rel="noopener noreferrer">
+      <Button
+        // onClick={handleClick}
+        sx={{
+          "&:hover": {
+            color: "#1CCD58",
+            backgroundColor: "yellow",
+            backgroundColor: "rgba(121, 255, 167, 0.04)",
+            boxShadow: "0px 0px 40px 0px rgba(0, 0, 0, 0.20)",
+            backdropFilter: "blur(45px)",
+          },
+          width: "100%",
+          borderRadius: "10px",
+          color: "white",
+          textTransform: "capitalize",
+          fontFamily: "Inter",
+          fontSize: "14px",
+        }}
+      >
+        <div className={styles.dropdownItem}>
+          <img src={props.img} loading="lazy" alt="" />
+          <p className={styles.itemText}>{props.text}</p>
+        </div>
+      </Button>
+    </a>
   );
 };
 

@@ -62,7 +62,7 @@ const Home = () => {
         <Header />
         <Dashboard />
       </div>
-      {/* <Stats /> */}
+      <Stats />
       <div className={styles.box1}>
         <img
           src="/keyfeature.webp"

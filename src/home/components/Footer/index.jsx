@@ -17,16 +17,52 @@ const Footer = () => {
         <div className={styles.right_container}>
           <div className={styles.links_container}>
             <h3 className={styles.category}>About Us</h3>
-            <p>About Us</p>
-            <p>Gitbook</p>
-            <p>GitHub</p>
-            <p>Medium</p>
-            <p>Press Kit</p>
+            <ul>
+              <li>
+                <a target="_blank" href="https://docs.indexzoo.com/">
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a target="_blank" href="https://docs.indexzoo.com/">
+                  Gitbook
+                </a>
+              </li>
+              <li>
+                <a target="_blank" href="https://github.com/IndexZoo">
+                  GitHub
+                </a>
+              </li>
+              <li>
+                <a target="_blank" href="https://medium.com/indexzoo">
+                  Medium
+                </a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://sheer-avatar-2ad.notion.site/65f8bfdb40724fe3a996e389026fc837?v=f5253bea30574e87a0a9e784276766bc"
+                >
+                  Press Kit
+                </a>
+              </li>
+            </ul>
           </div>
+
           <div className={styles.links_container}>
             <h3 className={styles.category}>Our Products</h3>
-            <p>IndexZoo</p>
-            <p>ZooEx</p>
+            <ul>
+              <li>
+                <a target="_blank" href="https://www.indexzoo.com">
+                  IndexZoo
+                </a>
+              </li>
+              <li>
+                <a target="_blank" href="">
+                  ZooEx
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
