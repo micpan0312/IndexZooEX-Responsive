@@ -56,7 +56,7 @@ const Home = () => {
           />
           <Image
             src="/mobile_dash_right.png"
-            loading="lazy"
+            // loading="lazy"
             alt=""
             className={styles.mobile_dash_r}
           />
