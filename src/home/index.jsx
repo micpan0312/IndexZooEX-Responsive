@@ -17,6 +17,8 @@ const Highlights = dynamic(() => import("../home/components/Highlights"));
 const JoinZoo = dynamic(() => import("../home/components/JoinZoo"));
 const Footer = dynamic(() => import("../home/components/Footer"));
 
+import Image from "next/image";
+
 const Home = () => {
   const [open, setOpen] = useState(false);
 

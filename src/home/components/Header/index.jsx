@@ -62,7 +62,7 @@ const Header = () => {
     <div>
       <div className={styles.mobile_header_container} ref={ref}>
         <div className={styles.mobile_header_left}>
-          <img
+          <Image
             src={"/logo_mobile.png"}
             loading="lazy"
             alt="Zoo Logo"
@@ -70,7 +70,7 @@ const Header = () => {
           />
         </div>
         <div className={styles.mobile_header_right}>
-          {/* <Button className={styles.mobile_enter}>Enter Zoo</Button> */}
+        {/* <Button className={styles.mobile_enter}>Enter Zoo</Button> */}
           <img
             src={checkbox}
             loading="lazy"

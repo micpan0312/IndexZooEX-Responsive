@@ -7,7 +7,7 @@ const Footer = () => {
     <div className={styles.footer_container}>
       <div className={styles.footer_top}>
         <div className={styles.left_container}>
-          <img src={"/logo.png"} loading="lazy" alt="zoo logo" />
+          <Image src={"/logo.png"} loading="lazy" alt="zoo logo" />
           <p className={styles.left_container_text}>
             ZooEx is a decentralized margin trading protocol that enables
             leverage trading for any tokens.
