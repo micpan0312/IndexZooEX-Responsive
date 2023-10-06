@@ -2,8 +2,8 @@ import { Button, Menu, MenuItem, Popover } from "@mui/material";
 import { useState, useEffect } from "react";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import styles from "./index.module.css";
-import { PhotoSizeSelectActual } from "@mui/icons-material";
 import { useRef } from "react";
+import Image from "next/image";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -143,8 +143,10 @@ const Header = () => {
       </div>
 
       <div className={styles.header_container}>
-        <img
+        <Image
           src={"/logo.png"}
+          width={200}
+          height={50}
           loading="lazy"
           className={styles.header_container_left}
         />

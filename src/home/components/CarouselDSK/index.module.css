@@ -46,10 +46,10 @@
 .keyFeat_img {
   margin: 0;
   padding: 0;
-  width: 85%;
-  height: 85%;
+  width: 90%;
+  height: 90%;
   object-fit: contain;
-  border: 1px dashed orange;
+  /* border: 1px dashed orange; */
 }
 
 .rightSection {
@@ -61,7 +61,7 @@
 }
 
 .section_img {
-  margin-top: 7vh;
+  margin-top: 8vh;
   margin-left: 11vw;
   width: 60%;
   height: 400px;

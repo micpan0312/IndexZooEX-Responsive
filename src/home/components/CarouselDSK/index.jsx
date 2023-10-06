@@ -55,8 +55,8 @@ function CarouselDSK() {
                   <Image
                     src={image}
                     alt={name}
-                    width={1000}
-                    height={1000}
+                    width={400}
+                    height={400}
                     className={styles.keyFeat_img}
                   />
                 </div>

@@ -20,8 +20,8 @@
   /* border: 2px dashed red; */
   width: 90px;
   height: 34.29px;
-  /* margin-left: 80.28px; */
-  margin-left: 5%;
+  z-index: 1;
+  margin-left: 67px;
   margin-top: 39.79px;
 }
 
