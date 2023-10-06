@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./index.module.css";
-import { ClassNames } from "@emotion/react";
 
 const Footer = () => {
   return (
@@ -18,11 +17,6 @@ const Footer = () => {
           <div className={styles.links_container}>
             <h3 className={styles.category}>About Us</h3>
             <ul>
-              <li>
-                <a target="_blank" href="https://docs.indexzoo.com/">
-                  About Us
-                </a>
-              </li>
               <li>
                 <a target="_blank" href="https://docs.indexzoo.com/">
                   Gitbook

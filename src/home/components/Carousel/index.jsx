@@ -1,8 +1,7 @@
 import { useState } from "react";
 import styles from "./index.module.css";
-// import SwipeableViews from "react-swipeable-views";
 import { autoPlay } from "react-swipeable-views-utils";
-import { Button, Menu, MenuItem } from "@mui/material";
+import { Button } from "@mui/material";
 import SwipeableViews from "react-swipeable-views-react-18-fix";
 import Image from "next/image";
 import CarouselDSK from "../CarouselDSK";
@@ -86,8 +85,10 @@ const Carousel = () => {
                       {val?.title}
                     </div>
                     <div className={styles.box_top_value_info}>{val?.info}</div>
-                    <img
+                    <Image
                       className={styles.mbsw_img}
+                      width={400}
+                      height={400}
                       loading="lazy"
                       src={val?.img}
                     />

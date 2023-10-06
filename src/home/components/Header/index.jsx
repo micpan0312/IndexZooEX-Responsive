@@ -241,7 +241,7 @@ const DropdownItem = (props) => {
         }}
       >
         <div className={styles.dropdownItem}>
-          <img src={props.img} loading="lazy" alt="" />
+          <Image src={props.img} width={40} height={40} loading="lazy" alt="" />
           <p className={styles.itemText}>{props.text}</p>
         </div>
       </Button>

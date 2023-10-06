@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./index.module.css";
-import { Button, Menu, MenuItem } from "@mui/material";
+import { Button } from "@mui/material";
 import Image from "next/image";
 
 export default function Dashboard() {
@@ -18,10 +18,8 @@ export default function Dashboard() {
         </div>
       </div>
       <div className={styles.right_box}>
-        <Image
+        <img
           src="/dashboard.png"
-          width={2000}
-          height={1000}
           alt="Trading dashboard"
           className={styles.right_box_img}
         />

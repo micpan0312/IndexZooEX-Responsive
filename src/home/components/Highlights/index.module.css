@@ -90,6 +90,7 @@
 .static_image {
   /* border: 1px solid blue; */
   width: 120px;
+  height: auto;
   opacity: 1;
 }
 
@@ -97,6 +98,7 @@
   /* border: 1px solid red; */
   opacity: 0;
   width: 103px;
+  height: auto;
   margin: 6px 0px 15px 12px;
 }
 

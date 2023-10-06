@@ -1,6 +1,7 @@
 import { useState } from "react";
 import dynamic from "next/dynamic";
 import styles from "./index.module.css";
+import Image from "next/image";
 // import Header from "./components/Header";
 // import Dashboard from "./components/Dashboard";
 // import Stats from "./components/Stats";
@@ -8,7 +9,6 @@ import styles from "./index.module.css";
 // import JoinZoo from "./components/JoinZoo";
 // import Carousel from "./components/Carousel";
 // import Footer from "./components/Footer";
-
 const Header = dynamic(() => import("../home/components/Header"));
 const Dashboard = dynamic(() => import("../home/components/Dashboard"));
 const Stats = dynamic(() => import("../home/components/Stats"));
@@ -24,21 +24,26 @@ const Home = () => {
     <div className={styles.container_box}>
       <div className={styles.box1}>
         <div className={styles.desktop_bkg}>
-          <img
-            // src="/header_left_crop.png"
+          <Image
             src="/header_left1.png"
+            width={1000}
+            height={1000}
             alt=""
             loading="lazy"
             className={styles.left}
           />
-          <img
+          <Image
             src="/header_middle.png"
+            width={1000}
+            height={1000}
             alt=""
             loading="lazy"
             className={styles.middle}
           />
-          <img
+          <Image
             src="/header_right.png"
+            width={900}
+            height={900}
             alt=""
             loading="lazy"
             className={styles.right}
@@ -46,15 +51,18 @@ const Home = () => {
         </div>
 
         <div className={styles.mobile_bkg}>
-          <img
+          <Image
             src="/mobile_dash_bkg.png"
+            width={500}
+            height={500}
             loading="lazy"
             alt=""
             className={styles.mobile_dash}
           />
-          <img
+          <Image
             src="/mobile_dash_right.png"
-            loading="lazy"
+            width={300}
+            height={300}
             alt=""
             className={styles.mobile_dash_r}
           />
@@ -64,8 +72,10 @@ const Home = () => {
       </div>
       <Stats />
       <div className={styles.box1}>
-        <img
+        <Image
           src="/keyfeature.webp"
+          width={900}
+          height={900}
           loading="lazy"
           alt="Key Feature Bkg"
           className={styles.keyfeature}
@@ -73,32 +83,52 @@ const Home = () => {
         <Carousel />
       </div>
       <div className={styles.box1}>
-        <img
+        <Image
           src="/product_bkg_right_min.png"
+          width={900}
+          height={500}
           loading="lazy"
           alt=""
           className={styles.product_bkg_right}
         />
-        <img
+        <Image
           src="/product_bkg_min.png"
+          width={1000}
+          height={800}
           alt=""
           loading="lazy"
           className={styles.product_bkg}
         />
-        <img src="/paw_right.gif" loading="lazy" className={styles.pawR}></img>
-        <img src="/paw_left.gif" className={styles.pawL}></img>
+        <Image
+          src="/paw_right.gif"
+          width={900}
+          height={600}
+          loading="lazy"
+          className={styles.pawR}
+        />
+        <Image
+          src="/paw_left.gif"
+          width={1000}
+          height={100}
+          loading="lazy"
+          className={styles.pawL}
+        />
         <Highlights />
       </div>
       <div className={styles.box1}>
         <JoinZoo />
-        <img
+        <Image
           src="/joinZoo_right.png"
+          width={500}
+          height={500}
           alt=""
           loading="lazy"
           className={styles.joinZoo_right}
         />
-        <img
+        <Image
           src="/joinZoo_left.png"
+          width={500}
+          height={500}
           alt=""
           loading="lazy"
           className={styles.joinZoo_left}

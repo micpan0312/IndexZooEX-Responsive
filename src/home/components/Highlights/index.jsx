@@ -11,13 +11,17 @@ const Highlights = () => {
           <div className={styles.highlight_section}>
             <div className={styles.highlight_rows_img}>
               <div className={styles.image_container}>
-                <img
+                <Image
                   src="/data_bar_1.png"
+                  width={100}
+                  height={100}
                   loading="lazy"
                   className={styles.static_image}
                 />
-                <img
+                <Image
                   src="/tail_ani_1.gif"
+                  width={100}
+                  height={100}
                   loading="lazy"
                   className={styles.gif_image}
                 />
@@ -38,13 +42,17 @@ const Highlights = () => {
           <div className={styles.highlight_section}>
             <div className={styles.highlight_rows_img}>
               <div className={styles.image_container}>
-                <img
+                <Image
                   src="/data_bar_2.png"
+                  width={100}
+                  height={100}
                   loading="lazy"
                   className={styles.static_image}
                 />
-                <img
+                <Image
                   src="/tail_ani_2.gif"
+                  width={100}
+                  height={100}
                   loading="lazy"
                   className={styles.gif_image}
                 />
@@ -66,13 +74,17 @@ const Highlights = () => {
           <div className={styles.highlight_section}>
             <div className={styles.highlight_rows_img}>
               <div className={styles.image_container}>
-                <img
+                <Image
                   src="/data_bar_3.png"
+                  width={100}
+                  height={100}
                   loading="lazy"
                   className={styles.static_image}
                 />
-                <img
+                <Image
                   src="/tail_ani_3.gif"
+                  width={100}
+                  height={100}
                   loading="lazy"
                   className={styles.gif_image}
                 />

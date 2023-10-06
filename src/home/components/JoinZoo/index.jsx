@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./index.module.css";
-import { Button, Menu, MenuItem } from "@mui/material";
-import { Height } from "@mui/icons-material";
+import { Button } from "@mui/material";
+import Image from "next/image";
 
 const JoinZoo = () => {
   return (
@@ -14,16 +14,19 @@ const JoinZoo = () => {
           rel="noopener noreferrer"
         >
           <Button className={styles.join_info} onClick={() => {}}>
-            <img
+            <Image
               src="/twitter.png"
+              width={80}
+              height={80}
               loading="lazy"
               style={{
                 paddingLeft: "20px",
                 paddingTop: "16px",
                 paddingBottom: "16px",
                 height: "70px",
+                width: "auto",
               }}
-            ></img>
+            />
             <div className={styles.join_info_text}>Twitter</div>
           </Button>
         </a>
@@ -33,8 +36,10 @@ const JoinZoo = () => {
           rel="noopener noreferrer"
         >
           <Button className={styles.join_info}>
-            <img
+            <Image
               src="/discord.png"
+              width={80}
+              height={80}
               loading="lazy"
               sx={{
                 color: "white",
@@ -47,8 +52,9 @@ const JoinZoo = () => {
                 paddingTop: "16px",
                 paddingBottom: "16px",
                 height: "70px",
+                width: "auto",
               }}
-            ></img>
+            />
             <div className={styles.join_info_text}>Discord</div>
           </Button>
         </a>
@@ -58,16 +64,19 @@ const JoinZoo = () => {
           rel="noopener noreferrer"
         >
           <Button className={styles.join_info}>
-            <img
+            <Image
               src="/telegram.png"
+              width={80}
+              height={80}
               loading="lazy"
               style={{
                 paddingLeft: "20px",
                 paddingTop: "16px",
                 paddingBottom: "16px",
                 height: "70px",
+                width: "auto",
               }}
-            ></img>
+            />
             <div className={styles.join_info_text}>Telegram</div>
           </Button>
         </a>
@@ -77,16 +86,19 @@ const JoinZoo = () => {
           rel="noopener noreferrer"
         >
           <Button className={styles.join_info}>
-            <img
+            <Image
               src="/reddit.png"
+              width={80}
+              height={80}
               loading="lazy"
               style={{
                 paddingLeft: "20px",
                 paddingTop: "16px",
                 paddingBottom: "16px",
                 height: "70px",
+                width: "auto",
               }}
-            ></img>
+            />
             <div className={styles.join_info_text}>Reddit</div>
           </Button>
         </a>
@@ -98,11 +110,13 @@ const JoinZoo = () => {
           justifyContent: "center",
         }}
       >
-        <img
+        <Image
           src="/bull_w_bkg.jpg"
+          width={1500}
+          height={1000}
           loading="lazy"
           className={styles.bull_w_bkg}
-        ></img>
+        />
       </div>
     </div>
   );
