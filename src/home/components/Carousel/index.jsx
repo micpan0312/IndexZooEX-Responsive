@@ -89,7 +89,7 @@ const Carousel = () => {
                       className={styles.mbsw_img}
                       width={400}
                       height={400}
-                      loading="lazy"
+                      // loading="lazy"
                       src={val?.img}
                     />
                   </div>
