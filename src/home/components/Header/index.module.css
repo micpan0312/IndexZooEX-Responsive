@@ -106,7 +106,7 @@
   transition: all 0.28s ease-in;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .header_container {
     display: none;
     z-index: 5;
