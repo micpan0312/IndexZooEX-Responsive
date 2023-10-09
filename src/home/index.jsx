@@ -59,10 +59,10 @@ const Home = () => {
             alt=""
             className={styles.mobile_dash}
           />
-          <Image
+          <img
             src="/mobile_dash_right.png"
-            width={300}
-            height={300}
+            // width={300}
+            // height={300}
             alt=""
             className={styles.mobile_dash_r}
           />
