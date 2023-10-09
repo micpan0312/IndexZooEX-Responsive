@@ -125,15 +125,16 @@ const Header = () => {
                   <Image
                     src="/comingSoon.png"
                     alt=""
-                    width={80}
-                    height={80}
+                    width={280}
+                    height={120}
                     loading="lazy"
                     style={{
+                      zIndex: "20",
                       position: "absolute",
-                      marginLeft: "-30px",
-                      marginTop: "4px",
+                      marginLeft: "-25px",
+                      marginTop: "5.5px",
                       height: "auto",
-                      width: "60px",
+                      width: "40px",
                     }}
                   />
                 </div>
@@ -201,15 +202,15 @@ const Header = () => {
                 <Image
                   src="/comingSoon.png"
                   alt=""
-                  width={80}
-                  height={80}
+                  width={280}
+                  height={100}
                   loading="lazy"
                   style={{
                     position: "absolute",
-                    marginLeft: "-43px",
-                    marginTop: "4px",
+                    marginLeft: "-42px",
+                    marginTop: "5.5px",
                     height: "auto",
-                    width: "60px",
+                    width: "40px",
                   }}
                 />
               </div>
@@ -227,19 +228,6 @@ const Header = () => {
             >
               Zoo Doc
             </Button>
-            <Image
-              src="/comingSoon.png"
-              alt=""
-              width={80}
-              height={80}
-              loading="lazy"
-              style={{
-                marginLeft: "-25px",
-                marginBottom: "-8px",
-                height: "auto",
-                width: "60px",
-              }}
-            />
           </div>
 
           {/* <div style={{ paddingLeft: "40px" }}>
@@ -266,7 +254,6 @@ const DropdownItem = (props) => {
         sx={{
           "&:hover": {
             color: "#1CCD58",
-            backgroundColor: "yellow",
             backgroundColor: "rgba(121, 255, 167, 0.04)",
             boxShadow: "0px 0px 40px 0px rgba(0, 0, 0, 0.20)",
             backdropFilter: "blur(45px)",

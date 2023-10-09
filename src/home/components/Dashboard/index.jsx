@@ -15,6 +15,9 @@ export default function Dashboard() {
         </div>
         <div className={styles.enter_box}>
           <Button className={styles.enter_but}>ZooEx Coming Soon</Button>
+          <a href="" className={styles.read_more}>
+            Read More &rarr;
+          </a>
         </div>
       </div>
       <div className={styles.right_box}>

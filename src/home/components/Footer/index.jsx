@@ -59,14 +59,15 @@ const Footer = () => {
                 <Image
                   src="/comingSoon.png"
                   alt=""
-                  width={80}
-                  height={80}
+                  width={280}
+                  height={100}
                   loading="lazy"
                   style={{
-                    marginLeft: "-10px",
+                    zIndex: "10",
+                    marginLeft: "-12px",
                     marginBottom: "10px",
                     height: "auto",
-                    width: "60px",
+                    width: "40px",
                   }}
                 />
               </li>
