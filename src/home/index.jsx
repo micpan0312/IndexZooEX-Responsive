@@ -52,7 +52,7 @@ const Home = () => {
 
         <div className={styles.mobile_bkg}>
           <Image
-            src="/mobile_dash_bkg.png"
+            src="/mobile_dash_bkg_1.png"
             width={500}
             height={500}
             loading="lazy"
@@ -60,7 +60,7 @@ const Home = () => {
             className={styles.mobile_dash}
           />
           <img
-            src="/mobile_dash_right.png"
+            src="/mobile_dash_right_1.png"
             // width={300}
             // height={300}
             alt=""
