@@ -71,7 +71,7 @@
   /* border: 1px dashed springgreen; */
 }
 
-@media (max-width: 1366px) {
+@media (max-width: 1150px) {
   .join_box {
     width: 100%;
     height: fit-content;

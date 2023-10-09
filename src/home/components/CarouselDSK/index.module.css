@@ -1,7 +1,7 @@
 .section {
   display: flex;
   flex-direction: column;
-  margin: 0;
+  margin: 50px 0 0;
   padding: 0;
   width: 100;
   /* border: 1px dashed pink; */
@@ -13,7 +13,13 @@
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1050px) {
+  .section_text {
+    height: 380px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .section {
     display: none;
   }
@@ -181,10 +187,4 @@
     #dcf45d 92.54%
   );
   backdrop-filter: blur(15px);
-}
-
-@media (min-width: 800px) {
-  .text {
-    max-width: 90em;
-  }
 }

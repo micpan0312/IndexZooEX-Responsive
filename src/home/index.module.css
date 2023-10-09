@@ -112,7 +112,7 @@
   display: none;
 }
 
-@media (max-width: 1366px) {
+@media (max-width: 1200px) {
   .desktop_bkg {
     display: none;
   }
@@ -138,7 +138,9 @@
     width: 100vw;
     /* border: 1px dashed cyan; */
   }
+}
 
+@media (max-width: 576px) {
   .keyfeature {
     position: absolute;
     width: 190%;
