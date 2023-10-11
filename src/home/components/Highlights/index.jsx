@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./index.module.css";
-import Image from "next/image";
 
 const Highlights = () => {
   return (
@@ -11,14 +10,14 @@ const Highlights = () => {
           <div className={styles.highlight_section}>
             <div className={styles.highlight_rows_img}>
               <div className={styles.image_container}>
-                <Image
+                <img
                   src="/data_bar_1.png"
                   width={100}
                   height={100}
                   loading="lazy"
                   className={styles.static_image}
                 />
-                <Image
+                <img
                   src="/tail_ani_1.gif"
                   width={100}
                   height={100}
@@ -42,14 +41,14 @@ const Highlights = () => {
           <div className={styles.highlight_section}>
             <div className={styles.highlight_rows_img}>
               <div className={styles.image_container}>
-                <Image
+                <img
                   src="/data_bar_2.png"
                   width={100}
                   height={100}
                   loading="lazy"
                   className={styles.static_image}
                 />
-                <Image
+                <img
                   src="/tail_ani_2.gif"
                   width={100}
                   height={100}
@@ -74,14 +73,14 @@ const Highlights = () => {
           <div className={styles.highlight_section}>
             <div className={styles.highlight_rows_img}>
               <div className={styles.image_container}>
-                <Image
+                <img
                   src="/data_bar_3.png"
                   width={100}
                   height={100}
                   loading="lazy"
                   className={styles.static_image}
                 />
-                <Image
+                <img
                   src="/tail_ani_3.gif"
                   width={100}
                   height={100}

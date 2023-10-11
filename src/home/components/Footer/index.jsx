@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./index.module.css";
-import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -56,11 +55,9 @@ const Footer = () => {
                 <a target="_blank" href="">
                   ZooEx
                 </a>
-                <Image
+                <img
                   src="/comingSoon.png"
                   alt=""
-                  width={280}
-                  height={100}
                   loading="lazy"
                   style={{
                     zIndex: "10",

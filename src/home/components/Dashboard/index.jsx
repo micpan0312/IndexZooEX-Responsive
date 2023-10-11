@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./index.module.css";
 import { Button } from "@mui/material";
-import Image from "next/image";
 
 export default function Dashboard() {
   return (
@@ -30,11 +29,9 @@ export default function Dashboard() {
           alt="Trading dashboard"
           className={styles.right_box_img}
         />
-        <Image
+        <img
           src="/needle.gif"
           loading="lazy"
-          width={200}
-          height={100}
           alt="Trading line graph"
           className={styles.needle}
         />

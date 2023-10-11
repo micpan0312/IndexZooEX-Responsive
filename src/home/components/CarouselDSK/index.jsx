@@ -3,7 +3,6 @@ import styles from "./index.module.css";
 import { Button } from "@mui/material";
 import React, { useState, useEffect } from "react";
 import data from "./data";
-import Image from "next/image";
 
 function CarouselDSK() {
   const [people, setPeople] = useState(data);
@@ -52,13 +51,7 @@ function CarouselDSK() {
                   key={id}
                   className={`${styles.article_heading} ${styles[position]}`}
                 >
-                  <Image
-                    src={image}
-                    alt={name}
-                    width={400}
-                    height={400}
-                    className={styles.keyFeat_img}
-                  />
+                  <img src={image} alt={name} className={styles.keyFeat_img} />
                 </div>
               );
             })}

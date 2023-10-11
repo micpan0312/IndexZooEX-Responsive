@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import styles from "./index.module.css";
 import { useRef } from "react";
-import Image from "next/image";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -122,11 +121,9 @@ const Header = () => {
                     link="https://app.indexzoo.com/bull"
                   />
                   <DropdownItem img="/zoo.png" text={"ZooEx"} link="" />
-                  <Image
+                  <img
                     src="/comingSoon.png"
                     alt=""
-                    width={280}
-                    height={120}
                     loading="lazy"
                     style={{
                       zIndex: "20",
@@ -158,10 +155,8 @@ const Header = () => {
       </div>
 
       <div className={styles.header_container}>
-        <Image
+        <img
           src={"/logo.png"}
-          width={200}
-          height={50}
           loading="lazy"
           className={styles.header_container_left}
         />
@@ -199,11 +194,9 @@ const Header = () => {
                   link="https://app.indexzoo.com/bull"
                 />
                 <DropdownItem img="/zoo.png" text={"ZooEx"} link="" />
-                <Image
+                <img
                   src="/comingSoon.png"
                   alt=""
-                  width={280}
-                  height={100}
                   loading="lazy"
                   style={{
                     position: "absolute",
@@ -267,7 +260,7 @@ const DropdownItem = (props) => {
         }}
       >
         <div className={styles.dropdownItem}>
-          <Image src={props.img} width={40} height={40} loading="lazy" alt="" />
+          <img src={props.img} loading="lazy" alt="" />
           <p className={styles.itemText}>{props.text}</p>
         </div>
       </Button>

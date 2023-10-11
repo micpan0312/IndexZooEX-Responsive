@@ -3,7 +3,6 @@ import styles from "./index.module.css";
 import { autoPlay } from "react-swipeable-views-utils";
 import { Button } from "@mui/material";
 import SwipeableViews from "react-swipeable-views-react-18-fix";
-import Image from "next/image";
 import CarouselDSK from "../CarouselDSK";
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
@@ -85,13 +84,7 @@ const Carousel = () => {
                       {val?.title}
                     </div>
                     <div className={styles.box_top_value_info}>{val?.info}</div>
-                    <Image
-                      className={styles.mbsw_img}
-                      width={400}
-                      height={400}
-                      // loading="lazy"
-                      src={val?.img}
-                    />
+                    <img className={styles.mbsw_img} src={val?.img} />
                   </div>
                 </div>
               );

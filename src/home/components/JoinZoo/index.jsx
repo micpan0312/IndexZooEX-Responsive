@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./index.module.css";
 import { Button } from "@mui/material";
-import Image from "next/image";
 
 const JoinZoo = () => {
   return (
@@ -14,7 +13,7 @@ const JoinZoo = () => {
           rel="noopener noreferrer"
         >
           <Button className={styles.join_info} onClick={() => {}}>
-            <Image
+            <img
               src="/twitter.png"
               width={80}
               height={80}
@@ -36,7 +35,7 @@ const JoinZoo = () => {
           rel="noopener noreferrer"
         >
           <Button className={styles.join_info}>
-            <Image
+            <img
               src="/discord.png"
               width={80}
               height={80}
@@ -64,7 +63,7 @@ const JoinZoo = () => {
           rel="noopener noreferrer"
         >
           <Button className={styles.join_info}>
-            <Image
+            <img
               src="/telegram.png"
               width={80}
               height={80}
@@ -86,7 +85,7 @@ const JoinZoo = () => {
           rel="noopener noreferrer"
         >
           <Button className={styles.join_info}>
-            <Image
+            <img
               src="/reddit.png"
               width={80}
               height={80}
@@ -110,7 +109,7 @@ const JoinZoo = () => {
           justifyContent: "center",
         }}
       >
-        <Image
+        <img
           src="/bull_w_bkg.jpg"
           width={1500}
           height={1000}
