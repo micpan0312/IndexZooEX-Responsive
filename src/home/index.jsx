@@ -82,8 +82,9 @@ const Home = () => {
           loading="lazy"
           className={styles.product_bkg}
         />
-        <img src="/paw_right.gif" loading="lazy" className={styles.pawR} />
         <img src="/paw_left.gif" loading="lazy" className={styles.pawL} />
+
+        <img src="/paw_right.gif" loading="lazy" className={styles.pawR} />
         <Highlights />
       </div>
       <div className={styles.box1}>
