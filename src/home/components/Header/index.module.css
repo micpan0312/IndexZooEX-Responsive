@@ -39,6 +39,11 @@
   color: white;
 }
 
+.btn:hover {
+  color: #42ff37;
+  transition: color 0.3s;
+}
+
 .header_container_right_enter {
   font-weight: bold;
   width: 139px;
@@ -104,6 +109,11 @@
   visibility: hidden;
   transform: translateY(-10px);
   transition: all 0.28s ease-in;
+}
+
+#basic-button:hover {
+  color: #42ff37; /* Change the text color to #42FF37 when hovering */
+  transition: color 0.3s; /* Add a transition effect for a smooth color change */
 }
 
 @media (max-width: 768px) {
@@ -236,6 +246,12 @@
     letter-spacing: 0.5px;
     font-family: "Inter", sans-serif;
     /* border: 1px dashed red; */
+  }
+
+  .mobile_prod:hover,
+  .mobile_zooDoc:hover {
+    color: #42ff37;
+    transition: color 0.3s;
   }
 
   .dropdown_menu {

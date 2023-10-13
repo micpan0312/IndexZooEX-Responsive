@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styles from "./index.module.css";
 import { autoPlay } from "react-swipeable-views-utils";
 import { Button } from "@mui/material";
