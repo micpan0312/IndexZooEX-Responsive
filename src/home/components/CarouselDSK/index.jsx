@@ -22,7 +22,7 @@ function CarouselDSK() {
   useEffect(() => {
     let slider = setInterval(() => {
       setIndex(index + 1);
-    }, 3000);
+    }, 5050);
     return () => clearInterval(slider);
   }, [index]);
 
