@@ -1,9 +1,9 @@
-import * as React from 'react';
-import PropTypes from 'prop-types';
-import Document, { Html, Head, Main, NextScript } from 'next/document';
-import createEmotionServer from '@emotion/server/create-instance';
-import theme, { roboto } from '../src/theme';
-import createEmotionCache from '../src/createEmotionCache';
+import * as React from "react";
+import PropTypes from "prop-types";
+import Document, { Html, Head, Main, NextScript } from "next/document";
+import createEmotionServer from "@emotion/server/create-instance";
+import theme, { roboto } from "../src/theme";
+import createEmotionCache from "../src/createEmotionCache";
 
 export default function MyDocument(props) {
   const { emotionStyleTags } = props;
@@ -13,7 +13,26 @@ export default function MyDocument(props) {
       <Head>
         {/* PWA primary color */}
         <meta name="theme-color" content={theme.palette.primary.main} />
-        <link rel="shortcut icon" href="/favicon.ico" sizes="16x16" />
+        {/* <link rel="shortcut icon" href="/favicon.ico" sizes="16x16" /> */}
+
+        {/* Favicon setting here */}
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicon-16x16.png"
+        />
 
         <meta name="emotion-insertion-point" content="" />
         {emotionStyleTags}
@@ -72,7 +91,7 @@ MyDocument.getInitialProps = async (ctx) => {
   const emotionStyles = extractCriticalToChunks(initialProps.html);
   const emotionStyleTags = emotionStyles.styles.map((style) => (
     <style
-      data-emotion={`${style.key} ${style.ids.join(' ')}`}
+      data-emotion={`${style.key} ${style.ids.join(" ")}`}
       key={style.key}
       // eslint-disable-next-line react/no-danger
       dangerouslySetInnerHTML={{ __html: style.css }}
