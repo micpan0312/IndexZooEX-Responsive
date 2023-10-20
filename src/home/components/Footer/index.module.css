@@ -73,7 +73,7 @@
 }
 
 .links_container li {
-  margin: 0 0 16px;
+  margin: 0 0 14px;
   padding: 0;
   text-align: left;
 }
@@ -154,7 +154,6 @@
 
   .left_container img {
     margin-top: 25px;
-    /* width: 95px; */
     width: 47px;
     height: 18.377px;
   }

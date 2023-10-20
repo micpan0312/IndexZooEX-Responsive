@@ -46,13 +46,13 @@ const Footer = () => {
           <div className={styles.links_container}>
             <h3 className={styles.category}>Our Products</h3>
             <ul>
-              <li style={{ marginBottom: "8px" }}>
+              <li style={{ marginBottom: "4px" }}>
                 <a target="_blank" href="https://www.indexzoo.com">
                   IndexZoo
                 </a>
               </li>
               <li>
-                <a target="_blank" href="">
+                <a target="_self" href="">
                   ZooEx
                 </a>
                 <img
@@ -60,11 +60,10 @@ const Footer = () => {
                   alt=""
                   loading="lazy"
                   style={{
-                    zIndex: "10",
-                    marginLeft: "-12px",
-                    marginBottom: "10px",
+                    marginLeft: "-13px",
+                    marginBottom: "9px",
                     height: "auto",
-                    width: "40px",
+                    width: "45px",
                   }}
                 />
               </li>

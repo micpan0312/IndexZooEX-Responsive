@@ -128,10 +128,10 @@ const Header = () => {
                     style={{
                       zIndex: "20",
                       position: "absolute",
-                      marginLeft: "-25px",
-                      marginTop: "5.5px",
+                      marginLeft: "-27px",
+                      marginTop: "0px",
                       height: "auto",
-                      width: "40px",
+                      width: "50px",
                     }}
                   />
                 </div>
@@ -139,16 +139,22 @@ const Header = () => {
             </div>
 
             <div style={{ paddingLeft: "32px" }}>
-              <Button
-                id="zoo-doc"
-                style={{
-                  marginRight: "30px",
-                  textTransform: "capitalize",
-                }}
-                className={styles.mobile_zooDoc}
+              <a
+                href="https://docs.indexzoo.com/"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                Zoo Doc
-              </Button>
+                <Button
+                  id="zoo-doc"
+                  style={{
+                    marginRight: "30px",
+                    textTransform: "capitalize",
+                  }}
+                  className={styles.mobile_zooDoc}
+                >
+                  Zoo Doc
+                </Button>
+              </a>
             </div>
           </div>
         </div>
@@ -200,27 +206,33 @@ const Header = () => {
                   loading="lazy"
                   style={{
                     position: "absolute",
-                    marginLeft: "-42px",
-                    marginTop: "5.5px",
+                    marginLeft: "-43px",
+                    marginTop: "1px",
                     height: "auto",
-                    width: "40px",
+                    width: "50px",
                   }}
                 />
               </div>
             </div>
           </div>
           <div style={{ paddingLeft: "32px", zIndex: "1" }}>
-            <Button
-              style={{
-                width: "80px",
-                textTransform: "capitalize",
-                fontSize: "16px",
-                marginTop: "38px",
-              }}
-              className={styles.btn}
+            <a
+              href="https://docs.indexzoo.com/"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Zoo Doc
-            </Button>
+              <Button
+                style={{
+                  width: "80px",
+                  textTransform: "capitalize",
+                  fontSize: "16px",
+                  marginTop: "38px",
+                }}
+                className={styles.btn}
+              >
+                Zoo Doc
+              </Button>{" "}
+            </a>
           </div>
 
           {/* <div style={{ paddingLeft: "40px" }}>
