@@ -18,11 +18,12 @@ const Highlights = () => {
                   className={styles.static_image}
                 />
                 <img
-                  src="/tail_ani_1.gif"
+                  // src="/tail_ani_1.gif"
+                  src="ani_1.gif"
                   width={100}
                   height={100}
                   loading="lazy"
-                  className={styles.gif_image}
+                  className={styles.gif_image1}
                 />
               </div>
             </div>
@@ -49,11 +50,12 @@ const Highlights = () => {
                   className={styles.static_image}
                 />
                 <img
-                  src="/tail_ani_2.gif"
+                  // src="/tail_ani_2.gif"
+                  src="ani_2.gif"
                   width={100}
                   height={100}
                   loading="lazy"
-                  className={styles.gif_image}
+                  className={styles.gif_image2}
                 />
               </div>
             </div>
@@ -85,7 +87,7 @@ const Highlights = () => {
                   width={100}
                   height={100}
                   loading="lazy"
-                  className={styles.gif_image}
+                  className={styles.gif_image3}
                 />
               </div>
             </div>
